@@ -82,7 +82,7 @@ export function Hero() {
               initial={reduced ? false : { opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...transition, delay: 0.45 }}
-              className="mt-6 max-w-xl text-base md:text-lg text-ink-soft leading-relaxed lg:hidden"
+              className="mt-6 max-w-xl text-base md:text-lg text-ink-soft leading-relaxed"
             >
               I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence.
             </motion.p>
@@ -222,15 +222,12 @@ export function Hero() {
                   {profile.firstName} · 2026
                 </span>
               </div>
-              {/* Hero line under portrait on large screens */}
-              <motion.p
-                initial={reduced ? false : { opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ ...transition, delay: 0.75 }}
-                className="mt-6 hidden lg:block text-center max-w-[28rem] text-base md:text-lg text-ink-soft leading-relaxed mx-auto"
-              >
-                I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence.
-              </motion.p>
+              {/* Subheadline placed outside the portrait rings and name */}
+              <div className="absolute left-1/2 -translate-x-1/2 w-full flex justify-center pointer-events-none" style={{ bottom: '-4.5rem' }}>
+                <p className="max-w-[36rem] text-center text-sm md:text-base text-ink-soft px-4">
+                  {profile.positioning}
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
