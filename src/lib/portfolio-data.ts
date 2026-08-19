@@ -448,9 +448,9 @@ export const education: EducationEntry[] = [
 export const sections = [
   { id: "intro", label: "Intro", index: "00" },
   { id: "about", label: "About", index: "01" },
-  { id: "expertise", label: "Expertise", index: "02" },
-  { id: "experience", label: "Experience", index: "03" },
-  { id: "work", label: "Projects", index: "04" },
+  { id: "experience", label: "Experience", index: "02" },
+  { id: "work", label: "Projects", index: "03" },
+  { id: "expertise", label: "Expertise", index: "04" },
   { id: "education", label: "Education", index: "05" },
   { id: "contact", label: "Contact", index: "06" },
 ] as const;

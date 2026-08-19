@@ -171,20 +171,21 @@ export function Projects() {
       </div>
 
       {/* ── Carousel track ── */}
-      <div
-        ref={trackRef}
-        onScroll={onScroll}
-        onMouseDown={onMouseDown}
-        onMouseMove={isDragging ? onMouseMove : undefined}
-        onMouseUp={endDrag}
-        onMouseLeave={endDrag}
-        style={{
-          cursor: isDragging ? "grabbing" : "grab",
-          paddingLeft: "clamp(1.25rem, 4vw, 3rem)",
-          paddingRight: "clamp(1.25rem, 4vw, 3rem)",
-        }}
-        className="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 select-none"
-      >
+      <div className="container-editorial">
+        <div
+          ref={trackRef}
+          onScroll={onScroll}
+          onMouseDown={onMouseDown}
+          onMouseMove={isDragging ? onMouseMove : undefined}
+          onMouseUp={endDrag}
+          onMouseLeave={endDrag}
+          style={{
+            cursor: isDragging ? "grabbing" : "grab",
+            paddingLeft: 0,
+            paddingRight: 0,
+          }}
+          className="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 select-none"
+        >
         <AnimatePresence initial={false} mode="popLayout">
           {filteredProjects.map((project, i) => (
             <ProjectCard
@@ -197,8 +198,9 @@ export function Projects() {
           ))}
         </AnimatePresence>
 
-        {/* End spacer so last card can fully snap to centre-left */}
-        <div className="shrink-0 w-8 md:w-16" aria-hidden />
+          {/* End spacer so last card can fully snap to centre-left */}
+          <div className="shrink-0 w-8 md:w-16" aria-hidden />
+        </div>
       </div>
 
       {/* ── Progress dots ── */}

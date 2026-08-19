@@ -42,9 +42,9 @@ export default function Home() {
           duration={85}
         />
         <About />
-        <Expertise />
         <Experience />
         <Projects />
+        <Expertise />
         <Education />
         <Contact />
       </main>
