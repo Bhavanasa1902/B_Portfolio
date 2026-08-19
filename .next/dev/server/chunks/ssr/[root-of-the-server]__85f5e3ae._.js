@@ -1,0 +1,372 @@
+module.exports = [
+"[next]/internal/font/google/outfit_9f99aec4.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "className": "outfit_9f99aec4-module__6MKK-W__className",
+  "variable": "outfit_9f99aec4-module__6MKK-W__variable",
+});
+}),
+"[next]/internal/font/google/outfit_9f99aec4.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$outfit_9f99aec4$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[next]/internal/font/google/outfit_9f99aec4.module.css [app-rsc] (css module)");
+;
+const fontData = {
+    className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$outfit_9f99aec4$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].className,
+    style: {
+        fontFamily: "'Outfit', 'Outfit Fallback'",
+        fontStyle: "normal"
+    }
+};
+if (__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$outfit_9f99aec4$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].variable != null) {
+    fontData.variable = __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$outfit_9f99aec4$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].variable;
+}
+const __TURBOPACK__default__export__ = fontData;
+}),
+"[next]/internal/font/google/cormorant_garamond_94c4005.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "className": "cormorant_garamond_94c4005-module__H_r2OW__className",
+  "variable": "cormorant_garamond_94c4005-module__H_r2OW__variable",
+});
+}),
+"[next]/internal/font/google/cormorant_garamond_94c4005.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$cormorant_garamond_94c4005$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[next]/internal/font/google/cormorant_garamond_94c4005.module.css [app-rsc] (css module)");
+;
+const fontData = {
+    className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$cormorant_garamond_94c4005$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].className,
+    style: {
+        fontFamily: "'Cormorant Garamond', 'Cormorant Garamond Fallback'"
+    }
+};
+if (__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$cormorant_garamond_94c4005$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].variable != null) {
+    fontData.variable = __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$cormorant_garamond_94c4005$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].variable;
+}
+const __TURBOPACK__default__export__ = fontData;
+}),
+"[next]/internal/font/google/jetbrains_mono_dcb33000.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "className": "jetbrains_mono_dcb33000-module__MOnVia__className",
+  "variable": "jetbrains_mono_dcb33000-module__MOnVia__variable",
+});
+}),
+"[next]/internal/font/google/jetbrains_mono_dcb33000.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$jetbrains_mono_dcb33000$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[next]/internal/font/google/jetbrains_mono_dcb33000.module.css [app-rsc] (css module)");
+;
+const fontData = {
+    className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$jetbrains_mono_dcb33000$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].className,
+    style: {
+        fontFamily: "'JetBrains Mono', 'JetBrains Mono Fallback'",
+        fontStyle: "normal"
+    }
+};
+if (__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$jetbrains_mono_dcb33000$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].variable != null) {
+    fontData.variable = __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$jetbrains_mono_dcb33000$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].variable;
+}
+const __TURBOPACK__default__export__ = fontData;
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Toaster",
+    ()=>Toaster
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const Toaster = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Toaster() from the server but Toaster is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx <module evaluation>", "Toaster");
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx [app-rsc] (client reference proxy)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Toaster",
+    ()=>Toaster
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const Toaster = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call Toaster() from the server but Toaster is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx", "Toaster");
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$ui$2f$toaster$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx [app-rsc] (client reference proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$ui$2f$toaster$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx [app-rsc] (client reference proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$ui$2f$toaster$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ThemeProvider",
+    ()=>ThemeProvider
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const ThemeProvider = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call ThemeProvider() from the server but ThemeProvider is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx <module evaluation>", "ThemeProvider");
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx [app-rsc] (client reference proxy)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ThemeProvider",
+    ()=>ThemeProvider
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const ThemeProvider = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call ThemeProvider() from the server but ThemeProvider is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx", "ThemeProvider");
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$theme$2d$provider$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx [app-rsc] (client reference proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$theme$2d$provider$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx [app-rsc] (client reference proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$theme$2d$provider$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/layout.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>RootLayout,
+    "metadata",
+    ()=>metadata
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$outfit_9f99aec4$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/outfit_9f99aec4.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$cormorant_garamond_94c4005$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/cormorant_garamond_94c4005.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$jetbrains_mono_dcb33000$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/jetbrains_mono_dcb33000.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$ui$2f$toaster$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/ui/toaster.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$theme$2d$provider$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/theme-provider.tsx [app-rsc] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+const siteUrl = "https://bhavana-portfolio-cyan.vercel.app";
+const title = "Bhavana Sudhakar Athavane — Data Engineer";
+const description = "Data engineer specializing in production-grade pipelines, cloud data platforms, and ML-ready infrastructure. Building the data foundations that let analytics, ML, and operations scale.";
+const metadata = {
+    metadataBase: new URL(siteUrl),
+    title: {
+        default: title,
+        template: "%s — Bhavana Athavane"
+    },
+    description,
+    keywords: [
+        "Data Engineer",
+        "Bhavana Athavane",
+        "Bhavana Sudhakar Athavane",
+        "ETL Pipelines",
+        "BigQuery",
+        "Vertex AI",
+        "Google Cloud Platform",
+        "PostgreSQL",
+        "Oracle DB",
+        "Data Platform Engineer",
+        "ML Pipeline",
+        "Backend Systems"
+    ],
+    authors: [
+        {
+            name: "Bhavana Sudhakar Athavane"
+        }
+    ],
+    creator: "Bhavana Sudhakar Athavane",
+    publisher: "Bhavana Sudhakar Athavane",
+    applicationName: "Bhavana Athavane — Portfolio",
+    category: "technology",
+    alternates: {
+        canonical: "/"
+    },
+    icons: {
+        icon: [
+            {
+                url: "/favicon.svg",
+                type: "image/svg+xml"
+            }
+        ]
+    },
+    openGraph: {
+        type: "profile",
+        locale: "en_US",
+        url: siteUrl,
+        siteName: "Bhavana Athavane — Portfolio",
+        title,
+        description,
+        firstName: "Bhavana",
+        lastName: "Athavane",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Bhavana Sudhakar Athavane — Data Engineer"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+        images: [
+            "/og-image.png"
+        ]
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1
+        }
+    },
+    verification: {
+        other: {
+            author: "Bhavana Sudhakar Athavane"
+        }
+    }
+};
+function RootLayout({ children }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
+        lang: "en",
+        suppressHydrationWarning: true,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("head", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                    type: "application/ld+json",
+                    dangerouslySetInnerHTML: {
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Person",
+                            name: "Bhavana Sudhakar Athavane",
+                            url: siteUrl,
+                            image: `${siteUrl}/og-image.png`,
+                            jobTitle: "Data Engineer",
+                            email: "mailto:bhavanasathavane@gmail.com",
+                            telephone: "+1 (657) 751-9230",
+                            address: {
+                                "@type": "PostalAddress",
+                                addressLocality: "Fullerton",
+                                addressRegion: "California",
+                                addressCountry: "USA"
+                            },
+                            alumniOf: [
+                                {
+                                    "@type": "CollegeOrUniversity",
+                                    name: "California State University, Fullerton"
+                                },
+                                {
+                                    "@type": "CollegeOrUniversity",
+                                    name: "Jyothy Institute of Technology"
+                                }
+                            ],
+                            worksFor: [
+                                {
+                                    "@type": "Organization",
+                                    name: "Nokia"
+                                },
+                                {
+                                    "@type": "Organization",
+                                    name: "Cognizant"
+                                }
+                            ],
+                            knowsAbout: [
+                                "Data Engineering",
+                                "ETL Pipelines",
+                                "BigQuery",
+                                "Google Cloud Platform",
+                                "Vertex AI",
+                                "PostgreSQL",
+                                "Oracle Database",
+                                "Machine Learning Infrastructure"
+                            ]
+                        })
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/layout.tsx",
+                    lineNumber: 119,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/layout.tsx",
+                lineNumber: 117,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
+                className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$outfit_9f99aec4$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$cormorant_garamond_94c4005$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$jetbrains_mono_dcb33000$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} antialiased bg-background text-foreground`,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$theme$2d$provider$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ThemeProvider"], {
+                    attribute: "class",
+                    defaultTheme: "light",
+                    enableSystem: false,
+                    disableTransitionOnChange: true,
+                    children: [
+                        children,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$ui$2f$toaster$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Toaster"], {}, void 0, false, {
+                            fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/layout.tsx",
+                            lineNumber: 175,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/layout.tsx",
+                    lineNumber: 168,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/layout.tsx",
+                lineNumber: 165,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/layout.tsx",
+        lineNumber: 116,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/Downloads/B_Portfolio-main/B_Portfolio/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/Downloads/B_Portfolio-main/B_Portfolio/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-rsc] (ecmascript)").vendored['react-rsc'].ReactJsxDevRuntime; //# sourceMappingURL=react-jsx-dev-runtime.js.map
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__85f5e3ae._.js.map

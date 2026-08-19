@@ -1,0 +1,536 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   Editorial Portfolio — Design Tokens
+   Mirrors the engineer-showcase design language:
+   - Cool paper background (#F9F9F8)
+   - Pure white surface
+   - Near-black ink with three-step gray ramp
+   - Monochromatic — accent is the deep ink itself, used for
+     italic display words, numerals, and emphasis.
+   - Cormorant Garamond serif display + Outfit sans body
+   - Hairline borders in rgba(0,0,0,0.08)
+   ============================================================ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-mute: var(--ink-mute);
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-paper-sunken: var(--paper-sunken);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-cormorant);
+  --font-mono: var(--font-jetbrains);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ---------- Light Mode (default — warm paper) ---------- */
+:root {
+  --radius: 0.5rem;
+
+  /* Surfaces — soft warm paper palette */
+  --paper: #F6F1E8;
+  --paper-raised: #FFFFFF;
+  --paper-sunken: #ECE4D9;
+  --background: #FAF4EC;
+  --foreground: #1B1916;
+
+  /* Ink scale — warm charcoal ramp */
+  --ink: #15130F;
+  --ink-soft: #5A554B;
+  --ink-mute: #7F7A70;
+
+  /* Rules / dividers */
+  --rule: rgba(22, 20, 17, 0.12);
+  --rule-strong: rgba(22, 20, 17, 0.22);
+  --border: rgba(22, 20, 17, 0.10);
+  --input: rgba(22, 20, 17, 0.08);
+
+  /* Accent — refined forest glaze */
+  --accent: #486456;
+  --accent-soft: rgba(72, 100, 86, 0.14);
+  --accent-ink: #15130f;
+
+  /* shadcn compatibility */
+  --card: var(--paper-raised);
+  --card-foreground: var(--ink);
+  --popover: #FFFFFF;
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--paper-sunken);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-sunken);
+  --muted-foreground: var(--ink-mute);
+  --accent-foreground: var(--paper);
+  --destructive: #B33A2A;
+  --ring: var(--ink);
+  --chart-1: #486456;
+  --chart-2: #7E7A6F;
+  --chart-3: #B1AA9F;
+  --chart-4: #D5CFC4;
+  --chart-5: #15130F;
+  --sidebar: var(--paper);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--ink);
+  --sidebar-primary-foreground: var(--paper);
+  --sidebar-accent: var(--paper-sunken);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--rule);
+  --sidebar-ring: var(--ink);
+
+  /* Fluid type scale — calibrated for Cormorant Garamond display */
+  --step--1: clamp(0.78rem, 0.76rem + 0.11vw, 0.85rem);
+  --step-0: clamp(0.94rem, 0.91rem + 0.16vw, 1.06rem);
+  --step-1: clamp(1.19rem, 1.13rem + 0.28vw, 1.4rem);
+  --step-2: clamp(1.5rem, 1.41rem + 0.45vw, 1.85rem);
+  --step-3: clamp(1.88rem, 1.74rem + 0.7vw, 2.44rem);
+  --step-4: clamp(2.36rem, 2.15rem + 1.05vw, 3.21rem);
+  --step-5: clamp(2.95rem, 2.65rem + 1.51vw, 4.23rem);
+  --step-6: clamp(3.7rem, 3.26rem + 2.17vw, 5.58rem);
+  --step-7: clamp(4.63rem, 4.0rem + 3.1vw, 7.35rem);
+}
+
+/* ---------- Dark Mode (deep matte charcoal) ---------- */
+.dark {
+  --paper: #111111;
+  --paper-raised: #1A1A18;
+  --paper-sunken: #0A0A0A;
+  --background: var(--paper);
+  --foreground: #F5F4F0;
+
+  --ink: #F5F4F0;
+  --ink-soft: #A3A3A0;
+  --ink-mute: #6B6B68;
+
+  --rule: rgba(255, 255, 255, 0.10);
+  --rule-strong: rgba(255, 255, 255, 0.20);
+  --border: var(--rule);
+  --input: var(--rule);
+
+  --accent: #F5F4F0;
+  --accent-soft: rgba(255, 255, 255, 0.06);
+  --accent-ink: #FFFFFF;
+
+  --card: var(--paper-raised);
+  --card-foreground: var(--ink);
+  --popover: var(--paper-raised);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--paper-sunken);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-sunken);
+  --muted-foreground: var(--ink-mute);
+  --accent-foreground: var(--paper);
+  --destructive: #D4574A;
+  --ring: var(--ink);
+  --chart-1: #F5F4F0;
+  --chart-2: #A3A3A0;
+  --chart-3: #6B6B68;
+  --chart-4: #4A4A47;
+  --chart-5: #FFFFFF;
+  --sidebar: var(--paper);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--ink);
+  --sidebar-primary-foreground: var(--paper);
+  --sidebar-accent: var(--paper-sunken);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--rule);
+  --sidebar-ring: var(--ink);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    outline-color: var(--ink);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background: var(--background);
+    background-image: radial-gradient(circle at top center, rgba(63, 73, 70, 0.08), transparent 24%), radial-gradient(circle at 18% 18%, rgba(63, 73, 70, 0.04), transparent 14%);
+    color: var(--foreground);
+    font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.011em;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--paper);
+  }
+
+  /* Custom focus ring — visible but refined */
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Custom scrollbar — subtle, paper-like */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--paper-sunken);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--rule-strong);
+    border-radius: 0;
+    border: 3px solid var(--paper-sunken);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-mute);
+  }
+
+  /* Display serif headings — Cormorant Garamond with optical sizing */
+  .font-display {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-optical-sizing: auto;
+    font-feature-settings: "ss01", "ss03", "ss05";
+    letter-spacing: -0.025em;
+  }
+
+  .font-mono-label {
+    font-family: var(--font-jetbrains), ui-monospace, monospace;
+    font-feature-settings: "calt", "ss01";
+    letter-spacing: 0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Number indicator style — used for section markers */
+  .numeral {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-feature-settings: "lnum", "tnum";
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+}
+
+/* ============================================================
+   Marquee — infinite horizontal scroll for skills banner
+   Mirrors the engineer-showcase scrolling skills strip
+   ============================================================ */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: scroll var(--marquee-duration, 40s) linear infinite;
+  will-change: transform;
+}
+.marquee-track[data-direction="reverse"] {
+  animation-direction: reverse;
+}
+.marquee-track[data-paused="true"] {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* ============================================================
+   Utility classes
+   ============================================================ */
+
+/* Editorial container — slightly narrower than typical for reading rhythm */
+.container-editorial {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+/* Wide container for hero / immersive sections */
+.container-wide {
+  width: 100%;
+  max-width: 88rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+/* Hairline divider — translucent black on cool paper */
+.rule-horizontal {
+  height: 1px;
+  background: var(--rule);
+  border: 0;
+}
+
+/* Eyebrow / kicker label — parens-wrapped, monospaced, wide tracking */
+.eyebrow {
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+
+/* Parens-wrapped section label — e.g. (SELECTED WORK) */
+.eyebrow-parens {
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+.eyebrow-parens::before {
+  content: "(";
+  margin-right: 0.4em;
+}
+.eyebrow-parens::after {
+  content: ")";
+  margin-left: 0.4em;
+}
+
+/* Italic display accent — used for emphasis words inside serif headlines */
+.italic-accent {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+/* Link with refined underline that animates on hover */
+.link-editorial {
+  position: relative;
+  display: inline-block;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+.link-editorial::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 350ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.link-editorial:hover::after,
+.link-editorial:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Subtle paper texture overlay — extremely faint, adds tactile feel */
+.paper-grain {
+  position: relative;
+}
+.paper-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+.dark .paper-grain::before {
+  mix-blend-mode: screen;
+  opacity: 0.04;
+}
+
+/* ============================================================
+   Section Theme Inversion
+   Forces a section to render with the opposite palette of the
+   active page theme. Used by the Stack (Marquee) and Contact
+   sections to provide editorial rhythm — dark slab on a light
+   page, light slab on a dark page.
+   Wrapped in @layer components so Tailwind v4 keeps the rule
+   in the final compiled output (it otherwise tree-shakes
+   custom classes it cannot detect via source scanning).
+   ============================================================ */
+
+@layer components {
+  /* When the page is in LIGHT mode, this section becomes DARK */
+  .section-invert {
+    background: #111111;
+    color: #F5F4F0;
+
+    --paper: #111111;
+    --paper-raised: #1A1A18;
+    --paper-sunken: #0A0A0A;
+    --background: var(--paper);
+    --foreground: #F5F4F0;
+
+    --ink: #F5F4F0;
+    --ink-soft: #A3A3A0;
+    --ink-mute: #6B6B68;
+
+    --rule: rgba(255, 255, 255, 0.10);
+    --rule-strong: rgba(255, 255, 255, 0.20);
+    --border: var(--rule);
+    --input: var(--rule);
+
+    --accent: #F5F4F0;
+    --accent-soft: rgba(255, 255, 255, 0.06);
+    --accent-ink: #FFFFFF;
+
+    --card: var(--paper-raised);
+    --card-foreground: var(--ink);
+    --popover: var(--paper-raised);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--paper-sunken);
+    --secondary-foreground: var(--ink);
+    --muted: var(--paper-sunken);
+    --muted-foreground: var(--ink-mute);
+    --accent-foreground: var(--paper);
+    --ring: var(--ink);
+    --sidebar: var(--paper);
+    --sidebar-foreground: var(--ink);
+    --sidebar-primary: var(--ink);
+    --sidebar-primary-foreground: var(--paper);
+    --sidebar-accent: var(--paper-sunken);
+    --sidebar-accent-foreground: var(--ink);
+    --sidebar-border: var(--rule);
+    --sidebar-ring: var(--ink);
+  }
+
+  /* When the page is in DARK mode, this section becomes LIGHT */
+  .dark .section-invert {
+    background: #F9F9F8;
+    color: #1A1A18;
+
+    --paper: #F9F9F8;
+    --paper-raised: #FFFFFF;
+    --paper-sunken: #F0F0ED;
+    --background: var(--paper);
+    --foreground: #1A1A18;
+
+    --ink: #1A1A18;
+    --ink-soft: #5C5C58;
+    --ink-mute: #8F8F89;
+
+    --rule: rgba(0, 0, 0, 0.08);
+    --rule-strong: rgba(0, 0, 0, 0.16);
+    --border: var(--rule);
+    --input: var(--rule);
+
+    --accent: #2D3028;
+    --accent-soft: rgba(45, 48, 40, 0.08);
+    --accent-ink: #1A1A18;
+
+    --card: var(--paper-raised);
+    --card-foreground: var(--ink);
+    --popover: #FFFFFF;
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--paper-sunken);
+    --secondary-foreground: var(--ink);
+    --muted: var(--paper-sunken);
+    --muted-foreground: var(--ink-mute);
+    --accent-foreground: var(--paper);
+    --ring: var(--ink);
+    --sidebar: var(--paper);
+    --sidebar-foreground: var(--ink);
+    --sidebar-primary: var(--ink);
+    --sidebar-primary-foreground: var(--paper);
+    --sidebar-accent: var(--paper-sunken);
+    --sidebar-accent-foreground: var(--ink);
+    --sidebar-border: var(--rule);
+    --sidebar-ring: var(--ink);
+  }
+
+  /* Smooth transition for theme inversion */
+  .section-invert,
+  .section-invert * {
+    transition-property: background-color, color, border-color;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+/* Reduced motion: disable all transitions/animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Utility: hide scrollbar while keeping scroll functionality ── */
+.scrollbar-none {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
