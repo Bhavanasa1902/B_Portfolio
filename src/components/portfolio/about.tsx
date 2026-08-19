@@ -48,25 +48,17 @@ export function About() {
           <div className="lg:col-span-9 lg:col-start-4">
             <Stagger as="div" className="flex flex-col gap-7 max-w-3xl" gap={0.12}>
               {profile.manifesto.map((para, i) => (
-                <StaggerItem key={i} as="p">
-                  {/* Large serif drop cap on first paragraph — baseline-aligned */}
+                <StaggerItem key={i} as="div">
+                  {/* Large serif drop cap on first paragraph — styled via CSS for consistent alignment */}
                   {i === 0 ? (
-                    <span className="font-display text-xl md:text-[1.6rem] leading-[1.55] text-ink-soft">
-                      <span
-                        className="float-left mr-3 font-display font-medium text-[4.5rem] md:text-[5rem] leading-[0.78] text-ink"
-                        style={{
-                          paddingTop: "0.12em",
-                          marginTop: "0.08em",
-                        }}
-                      >
+                    <p className="manifesto-first text-ink-soft">
+                      <span className="drop-cap" aria-hidden>
                         {para.charAt(0)}
                       </span>
-                      <span>{para.slice(1)}</span>
-                    </span>
+                      <span className="manifesto-first-body">{para.slice(1)}</span>
+                    </p>
                   ) : (
-                    <span className="text-base md:text-lg leading-[1.75] text-ink-soft">
-                      {para}
-                    </span>
+                    <p className="manifesto-body text-ink-soft">{para}</p>
                   )}
                 </StaggerItem>
               ))}
@@ -127,14 +119,14 @@ function PrincipleRow({
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 py-10 md:py-14 items-start group">
       {/* Massive serif numeral as graphic anchor */}
       <div className="md:col-span-2">
-        <span className="numeral block font-display font-medium text-ink leading-none text-[clamp(3rem,8vw,5rem)] tracking-[-0.04em] transition-transform duration-500 group-hover:translate-x-1">
+        <span className="numeral block font-display font-medium text-ink leading-none text-[clamp(3rem,8vw,4rem)] tracking-[-0.04em] transition-transform duration-500 group-hover:translate-x-1">
           {String(index).padStart(2, "0")}
         </span>
       </div>
 
       {/* Italic philosophy heading */}
       <div className="md:col-span-5">
-        <h4 className="font-display text-2xl md:text-3xl text-ink font-medium leading-tight">
+        <h4 className="font-display text-xl md:text-2xl text-ink font-medium leading-tight">
           <span className="italic font-normal text-ink-soft">{principle.title.split(" ")[0]}</span>{" "}
           {principle.title.split(" ").slice(1).join(" ")}
         </h4>

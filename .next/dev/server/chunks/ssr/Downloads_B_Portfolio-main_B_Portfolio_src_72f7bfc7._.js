@@ -26,18 +26,27 @@ const profile = {
     lastName: "Athavane",
     role: "Data Engineer",
     // Single line positioning statement used across hero / meta / footer
-    positioning: "Entry-level data engineer building reliable pipelines and analytics-ready data systems.",
+    positioning: "I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence.",
     // Long-form manifesto used in About
     manifesto: [
-        "I started in Bangalore working on OLTP systems with Oracle and SQL Server, then moved to California for graduate school at CSU Fullerton. That path gave me hands-on exposure to both production systems and modern data tooling.",
-        "What keeps me focused is reliable execution: schemas that reflect business logic, pipelines that are observable, and validation checks that catch issues before they become stakeholder problems.",
-        "As an entry-level data engineer, I am building depth at the intersection of cloud warehouses, transactional databases, and ML-ready pipelines — with an emphasis on measurable outcomes, clean handoffs, and maintainable systems."
+        "I build the systems that let AI and data scale — from backend to cloud.",
+        "I focus on engineering reliable backend systems, cloud-native architecture, and ML-ready data pipelines that teams can build on with confidence.",
+        "My work spans database engineering, REST API design, cloud platform integration, and applied machine learning — with a focus on measurable outcomes: lower latency, cleaner interfaces, and systems that hold up under real usage.",
+        "Through platform engineering and database co-ops, I've built fault-diagnostic pipelines on Google Cloud, integrating platform monitoring data with ticketing and asset-management systems through REST APIs, and worked on Python-based backend integrations across Oracle, MySQL, and PostgreSQL. In enterprise systems roles, I've contributed to database performance work and automated ETL workflows in Python. As a Graduate Teaching Associate at CSUF, I run labs and office hours in SQL and business analytics, helping students turn ambiguous business questions into structured, queryable analysis."
     ],
     location: "Fullerton, California, USA",
     email: "bhavanasathavane@gmail.com",
     phone: "+1 (657) 751-9230",
-    availability: "Open to entry-level data engineering roles",
-    availabilityNote: "Available immediately — full-time entry-level roles",
+    availability: "Open to data platform / AI engineering roles",
+    availabilityNote: "Open to full-time roles in data platforms, cloud, and AI engineering",
+    archetype: "developer",
+    seniority: "mid",
+    focusAreas: [
+        "AI",
+        "Cloud Computing",
+        "Fintech",
+        "Telecom"
+    ],
     socials: [
         {
             label: "LinkedIn",
@@ -58,39 +67,39 @@ const profile = {
     // Hero stat band — verified metrics from the source portfolio
     stats: [
         {
-            value: "80%",
-            label: "Manual effort removed with automated pipelines",
-            note: "Automation"
+            value: "4",
+            label: "Shipped data & AI projects",
+            note: "Products"
         },
         {
-            value: "0.95",
-            label: "ROC-AUC on graph-based fraud detection",
-            note: "Performance"
+            value: "8+",
+            label: "Production data pipelines",
+            note: "Pipelines"
         },
         {
-            value: "55%",
-            label: "Query latency reduced across relational systems",
-            note: "Optimization"
+            value: "500K+",
+            label: "Transactions & telemetry processed",
+            note: "Scale"
         },
         {
-            value: "50+",
-            label: "Students mentored in analytics & SQL",
-            note: "Mentorship"
+            value: "3",
+            label: "Years in production systems",
+            note: "Experience"
         }
     ],
     // Three positioning pillars shown as "Principles"
     principles: [
         {
-            title: "Reliable pipelines",
-            body: "ETL and backend flows that avoid surprises, keep data fresh, and scale with demand rather than against it."
+            title: "Reliable systems",
+            body: "Backend and ETL flows engineered to avoid surprises, stay observable, and scale with demand rather than against it."
         },
         {
-            title: "Production-ready data",
-            body: "Databases, schemas, and observability designed so teams can ship analytics and ML with confidence, not caveats."
+            title: "Production-ready foundations",
+            body: "Databases, APIs, and cloud infrastructure designed so teams can ship analytics, ML, and platform features with confidence, not caveats."
         },
         {
             title: "Impact-first work",
-            body: "Outcomes over activity: faster queries, lower batch time, and clearer business insights — measured, not asserted."
+            body: "Outcomes over activity: faster queries, lower latency, cleaner architecture — measured, not asserted."
         }
     ],
     // Quick tech tags surfaced in hero
@@ -98,13 +107,15 @@ const profile = {
         "SQL",
         "Python",
         "GCP",
-        "BigQuery",
         "Vertex AI",
+        "BigQuery",
+        "REST APIs",
+        "Docker",
+        "Flask",
+        "React",
         "ETL",
-        "Tableau",
-        "NLP",
-        "RAG",
-        "Oracle"
+        "Oracle",
+        "PostgreSQL"
     ]
 };
 const experience = [
@@ -122,7 +133,7 @@ const experience = [
                 period: "Jan 2026 — May 2026",
                 summary: "Running weekly labs, holding office hours, and grading structured assignments for a business analytics cohort moving from Excel into SQL.",
                 highlights: [
-                    "Mentored 50+ students per semester across Excel, SQL, and business analytics, holding office hours and grading structured assignments.",
+                    "Mentored 50+ students per semester across Excel, SQL, and business analytics, achieving a 95% assignment completion rate and improving average quiz scores by 18% through targeted labs and feedback.",
                     "Designed and led weekly labs covering VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query, and SQL — moving students from spreadsheet manipulation toward query-based analysis.",
                     "Helped learners translate ambiguous business questions into structured, queryable analysis with measurable success criteria."
                 ],
@@ -167,7 +178,7 @@ const experience = [
                 period: "Sep 2025 — Dec 2025",
                 summary: "Fall rotation focused on the database layer of the same AI inference platform — schema design, ETL consolidation, and Python service integrations.",
                 highlights: [
-                    "Designed 4+ relational database schemas in PostgreSQL and MySQL for AI-driven inference pipelines, improving average query response time by ~15% through composite indexing and normalization.",
+                    "Designed and optimized relational database schemas across Oracle, MySQL, and PostgreSQL for AI-driven backend systems, reducing average query latency by 55% through indexing, normalization, and query tuning.",
                     "Consolidated 3 redundant ETL scheduled jobs into a single stored procedure pipeline, materially cutting average batch completion time and operational surface area.",
                     "Built Python REST API integrations connecting backend services to OLTP databases, reducing average DB round-trips per request by ~40%."
                 ],
@@ -227,21 +238,27 @@ const projects = [
     {
         id: "fraud-detection",
         title: "Financial Fraud Detection Pipeline",
-        category: "Anomaly Detection · Vertex AI",
-        tagline: "End-to-end fraud detection on Google Cloud",
+        category: "ANOMALY DETECTION",
+        tagline: "Ensemble ML system for detecting and explaining suspicious transactions",
+        metric: 0.9497,
+        metricDescription: "ROC-AUC ACROSS 200K+ TRANSACTIONS",
         problem: "Flag high-risk transactions in real time without flooding analysts with false positives — a classic precision-vs-recall tension at scale.",
-        approach: "Built an end-to-end pipeline on Vertex AI covering transaction ingestion, feature engineering, and anomaly classification, with model outputs piped into a real-time alerting layer.",
-        outcome: "Achieved 89% precision on transaction classification across 1M+ synthetic transactions, integrated directly into a live fraud response workflow.",
+        approach: "Built an ensemble anomaly detection system combining XGBoost, Isolation Forest, and a PyTorch autoencoder, served through a Flask REST API. Used Neo4j graph analytics to surface relationship patterns between accounts and transactions that single-model approaches miss, with SHAP for model explainability. Added automated email notifications on every transaction, alerting users whether it was flagged as suspicious or processed successfully.",
+        outcome: "Achieved 0.9497 ROC-AUC across 200K+ transactions, with SHAP-based explanations attached to every flagged transaction and automated email alerts closing the loop between detection and user response.",
         engineering: [
-            "Ingested and processed 1M+ synthetic transactions through a feature engineering pipeline.",
-            "Trained and deployed an anomaly detection model achieving 89% precision on transaction classification.",
-            "Integrated model outputs with an alerting system for real-time fraud response."
+            "Built a 3-model ensemble (XGBoost, Isolation Forest, PyTorch autoencoder) to balance precision and recall across imbalanced fraud data.",
+            "Applied Neo4j graph analytics to detect relationship-based fraud patterns beyond individual transaction features.",
+            "Integrated SHAP explainability so every fraud prediction ships with a human-readable reason.",
+            "Built automated email notifications for every transaction — flagged or clean — closing the loop between model output and user response."
         ],
         stack: [
-            "Vertex AI",
-            "BigQuery",
-            "Python",
-            "Cloud Functions"
+            "XGBoost",
+            "Isolation Forest",
+            "PyTorch",
+            "SHAP",
+            "Neo4j",
+            "Flask",
+            "Python"
         ],
         tags: [
             "Data & ML",
@@ -253,21 +270,21 @@ const projects = [
     {
         id: "nlp-content-modelling",
         title: "Document Intelligence with NLP",
-        category: "CNN · OCR · Document Processing",
-        tagline: "Turning unstructured documents into structured metadata",
-        problem: "Manual categorization of diverse document formats was slow, inconsistent, and impossible to scale across a 10K-document corpus.",
-        approach: "Developed an NLP pipeline using CNN models and OCR to extract and structure unstructured text from heterogeneous document formats, then classify text segments into structured metadata.",
-        outcome: "Reduced manual categorization effort across a 10K-document test corpus by automating extraction and classification end-to-end.",
+        category: "DOCUMENT INTELLIGENCE",
+        tagline: "Turning unstructured documents into structured, queryable data",
+        problem: "Manual categorization of diverse document formats was slow, inconsistent, and impossible to scale across a large, varied document corpus.",
+        approach: "Developed a document intelligence pipeline using a CNN for image-based layout detection and document-type classification, paired with OCR to extract and structure unstructured text from heterogeneous formats. Extracted text was then processed with NLP to classify content into structured metadata.",
+        outcome: "Automated categorization and structured data extraction across 5+ document formats, replacing manual review with an end-to-end CNN + OCR + NLP pipeline.",
         engineering: [
-            "Processed 5+ document formats using OCR and text cleaning pipelines.",
-            "Trained CNN models to classify text segments and extract structured metadata.",
-            "Reduced manual categorization effort for a 10K-document test corpus through automation."
+            "Trained a CNN to detect document layout and classify document type from scanned images",
+            "Built an OCR pipeline to extract and clean text from heterogeneous document formats",
+            "Applied NLP to classify extracted text into structured metadata",
+            "Processed 5+ distinct document formats through the full pipeline"
         ],
         stack: [
             "NLP",
             "OCR",
-            "TensorFlow",
-            "Python"
+            "TensorFlow"
         ],
         tags: [
             "Data & ML",
@@ -279,15 +296,15 @@ const projects = [
     {
         id: "textile-db",
         title: "Textile Inventory & Order System",
-        category: "Relational · Real-time · Reporting",
-        tagline: "Normalized schema for inventory, orders, and supply",
-        problem: "A textile business needed a single source of truth for orders, inventory, and supplier data — with real-time consistency and analytical reporting on top.",
-        approach: "Designed a fully normalized schema for orders, inventory, and supplier tracking. Built stored procedures to keep stock and pricing consistent in real time, with reporting queries layered for demand forecasting.",
-        outcome: "A single relational system that supports live transactions, enforces consistency, and powers demand forecasting and production planning.",
+        category: "RELATIONAL DATABASE",
+        tagline: "Normalized schema for inventory, orders, and supply chain",
+        problem: "Designed for a hypothetical textile business needing a single source of truth for orders, inventory, and supplier data — with real-time consistency and analytical reporting on top.",
+        approach: "Designed a normalized schema for orders, inventory, supplier tracking, and payment workflows as a personal project (no external payment processing integrated). Built stored procedures to keep stock and pricing consistent in real time, with reporting queries layered for demand forecasting.",
+        outcome: "A relational system supporting live transactions, enforcing referential integrity across orders, inventory, and suppliers, with built-in demand-forecasting queries for production planning.",
         engineering: [
-            "Created a normalized schema for orders, inventory, and supplier tracking.",
-            "Built stored procedures to keep stock and pricing consistent in real time.",
-            "Added reporting queries for demand forecasting and production planning."
+            "Created a normalized schema for orders, inventory, supplier tracking, and payment workflows",
+            "Built stored procedures (PL/SQL) to enforce real-time stock and pricing consistency",
+            "Wrote demand-forecasting queries to support production planning decisions"
         ],
         stack: [
             "Oracle",
@@ -298,21 +315,22 @@ const projects = [
         tags: [
             "Backend & DB"
         ],
+        bottomLink: "CODE ↗",
         codeHref: "https://github.com/Bhavanasa1902/textile-db",
         featured: true
     },
     {
         id: "ecommerce-app",
-        title: "E-Commerce Web Application",
-        category: "Additional Project · React · Firebase",
+        title: "E-Commerce Web Application (Internship Project)",
+        category: "FULL-STACK",
         tagline: "Full shopping experience with persistent cart",
-        problem: "Build a complete commerce experience — discovery, authentication, cart, and checkout — without a custom backend, using Firebase as the system of record.",
-        approach: "Implemented a React-based storefront with Firebase authentication, Firestore-backed cart persistence, dynamic product browsing across 5+ categories, and a secure checkout flow.",
-        outcome: "A responsive commerce app used to strengthen frontend architecture, authentication, and data-state management fundamentals.",
+        problem: "Design and build a production-style commerce experience — product discovery, authentication, cart, and checkout — with Firebase as the system of record for real-time state management.",
+        approach: "Engineered a responsive React storefront integrated with Firebase Authentication and Firestore, implementing persistent cart state, dynamic product discovery with multi-category search and filtering, and a checkout flow modeling real transaction logic.",
+        outcome: "A fully functional e-commerce application demonstrating strong command of frontend architecture, authentication flows, and real-time data synchronization.",
         engineering: [
-            "Implemented product discovery with search and filtering across 5+ product categories.",
-            "Built Firebase authentication, Firestore cart persistence, and a secure checkout flow.",
-            "Optimized app performance with lazy loading and client-side caching."
+            "Engineered product discovery with multi-category search and filtering for a responsive browsing experience",
+            "Implemented Firebase Authentication and Firestore-backed cart persistence with real-time sync",
+            "Built a checkout flow modeling real transaction logic and state management"
         ],
         stack: [
             "React",
@@ -323,21 +341,24 @@ const projects = [
         tags: [
             "Full-Stack"
         ],
+        bottomLink: "CODE ↗",
         codeHref: "https://github.com/Bhavanasa1902/ecommerce-app",
         featured: false
     },
     {
         id: "book-to-playlist",
         title: "Book to Playlist",
-        category: "Additional Project · LLM · Web App",
+        category: "DATA ENGINEERING / NLP",
         tagline: "Translating narrative themes into music",
-        problem: "Readers often want music that mirrors the emotional arc of a book — but matching narrative themes to songs is a manual, subjective task.",
-        approach: "Built an AI-powered web application that uses LLM analysis to extract book themes, emotions, and narrative elements, then queries the Spotify API to curate a matching playlist.",
-        outcome: "An interactive React interface that turns any book description into a curated, playable Spotify playlist in seconds.",
+        problem: "Matching narrative themes to music is a manual, subjective task with no structured way to search and retrieve relevant songs across large book and song datasets.",
+        approach: "Designed a semantic retrieval pipeline for book-to-music recommendation. Processed and structured raw book and song datasets (descriptions, lyrics, acoustic features, popularity metrics), then generated BERT embeddings to represent thematic and semantic content. Built a FAISS-based vector index for fast nearest-neighbor similarity search at scale, with PCA applied for dimensionality reduction to optimize retrieval performance. Served results through a Flask backend.",
+        outcome: "A functioning recommendation system that retrieves the top N songs matching a given book's themes, built on structured multi-source datasets and optimized for fast similarity search.",
         engineering: [
-            "Integrated an LLM to analyze book themes, emotions, and narrative elements from user input.",
-            "Connected the Spotify API to search and curate music matching extracted book characteristics.",
-            "Built an interactive React interface for book input and playlist visualization."
+            "Processed and structured multi-source datasets (book metadata, song lyrics, acoustic features) for downstream embedding generation",
+            "Generated BERT embeddings to represent semantic and thematic content for cross-domain similarity matching",
+            "Built a FAISS vector index for scalable nearest-neighbor retrieval",
+            "Applied PCA for dimensionality reduction to optimize search performance",
+            "Built a Flask backend to serve recommendation results"
         ],
         stack: [
             "LLM",
@@ -346,24 +367,26 @@ const projects = [
             "Python"
         ],
         tags: [
-            "Data & ML",
+            "LLM",
             "Full-Stack"
         ],
         codeHref: "https://github.com/Bhavanasa1902/book-to-playlist",
+        bottomLink: "CODE ↗",
         featured: false
     },
     {
         id: "cryptozombies",
         title: "CryptoZombies Arena",
-        category: "Additional Project · Blockchain · Web3",
+        category: "WEB3 / BLOCKCHAIN",
         tagline: "On-chain arena battles with NFT gameplay",
-        problem: "Build a fully on-chain game where battles, rewards, and state transitions live on Ethereum — not in a centralized database.",
-        approach: "Developed Solidity smart contracts for NFT-enabled gameplay and token interactions, connected a React front end with Web3 wallets, and designed game logic for battles, rewards, and on-chain state updates.",
-        outcome: "A playable blockchain game with seamless wallet onboarding and verifiable on-chain state.",
+        problem: "Build a fully on-chain game where battles, breeding, marketplace trades, and player rankings all live on Ethereum — not in a centralized database.",
+        approach: "Extended the CryptoZombies starter contracts into a full-featured NFT game, contributing across smart contract development, frontend implementation, and Web3 integration — including an NFT marketplace, a breeding system with custom naming, a turn-based battle system, and a real-time leaderboard pulling data from blockchain events. Built a responsive HTML/CSS/JavaScript frontend with MetaMask wallet integration for seamless on-chain interaction.",
+        outcome: "A playable blockchain game with a working NFT marketplace, breeding mechanics, battle system, and live leaderboard — all backed by verifiable on-chain state.",
         engineering: [
-            "Developed Solidity smart contracts for NFT-enabled gameplay and token interactions.",
-            "Connected a React front end with Web3 wallets for seamless player engagement.",
-            "Designed game logic for battles, rewards, and on-chain state updates."
+            "Extended Solidity smart contracts (Factory → Feeding → Attack → Marketplace) to add NFT marketplace and breeding functionality",
+            "Built a real-time leaderboard that ranks players and zombies using live blockchain event data",
+            "Integrated MetaMask wallet connection with account switching and persistent connection state",
+            "Implemented a turn-based battle system with win/loss tracking and level progression on-chain"
         ],
         stack: [
             "Solidity",
@@ -372,24 +395,26 @@ const projects = [
             "Ethereum"
         ],
         tags: [
-            "Web3",
-            "Full-Stack"
+            "WEB3",
+            "Blockchain"
         ],
         codeHref: "https://github.com/Bhavanasa1902/CryptoZombies-Arena",
+        bottomLink: "CODE ↗",
         featured: false
     },
     {
         id: "titanfund",
         title: "TitanFund — Portfolio Analytics",
-        category: "Analytics Dashboard · Fintech",
-        tagline: "Real-time portfolio insights and metrics",
-        problem: "Investors need a single pane of glass for portfolio performance — combining live metrics, historical context, and exploratory filtering.",
-        approach: "Built a dashboard platform for tracking investment performance and portfolio metrics, connected backend analytics to frontend visualizations for real-time data updates, and enabled dynamic filtering and charting.",
-        outcome: "A dashboard that turns raw fund data into explorable portfolio metrics with real-time visualization updates.",
+        category: "BLOCKCHAIN / DATA MODELING",
+        tagline: "Real-time, on-chain crowdfunding data model",
+        problem: "Crowdfunding platforms need transparent, verifiable tracking of contributions and fund withdrawals — without a centralized authority controlling the data or the money.",
+        approach: "Built a blockchain-based crowdfunding platform where campaign data, contributions, and withdrawal requests are structured and stored on-chain via Solidity smart contracts. Designed the data flow for campaign creation, contribution tracking, and a withdrawal-approval system where contributors vote on fund releases — ensuring every state change is queryable and auditable through on-chain events. Built a Next.js frontend to surface this structured on-chain data to users in real time.",
+        outcome: "A working platform where campaign, contribution, and withdrawal data is fully structured on-chain, queryable via smart contract state and events, and enforced without reliance on a centralized database.",
         engineering: [
-            "Built a dashboard experience for tracking investment performance and portfolio metrics.",
-            "Connected backend analytics to frontend visualizations for real-time data updates.",
-            "Enabled users to explore fund performance with dynamic filtering and charting."
+            "Designed on-chain data structures for campaigns, contributions, and withdrawal requests using Solidity",
+            "Built a contributor-approval workflow where fund withdrawals require verifiable on-chain votes before release",
+            "Queried and surfaced structured blockchain event data through a Next.js frontend",
+            "Integrated MetaMask and Web3.js for wallet-based transaction handling"
         ],
         stack: [
             "React",
@@ -398,10 +423,11 @@ const projects = [
             "Visualization"
         ],
         tags: [
-            "Data & ML",
-            "Full-Stack"
+            "Analytics",
+            "Dashboard"
         ],
         codeHref: "https://github.com/Bhavanasa1902/TitanFund",
+        bottomLink: "CODE ↗",
         featured: false
     }
 ];
@@ -467,23 +493,23 @@ const skillGroups = [
         skills: [
             {
                 label: "Google Cloud Platform (GCP)",
-                value: 80
+                value: 88
             },
             {
                 label: "Vertex AI / ML Pipelines",
-                value: 72
+                value: 80
             },
             {
                 label: "BigQuery ML / Analytics",
-                value: 74
+                value: 78
             },
             {
                 label: "LLM Integration & Semantic Search",
-                value: 70
+                value: 74
             },
             {
                 label: "NLP & Text Analytics",
-                value: 66
+                value: 72
             }
         ]
     },
@@ -527,7 +553,7 @@ const education = [
     },
     {
         id: "jyothy",
-        institution: "Jyothy Institute of Technology",
+        institution: "Visvesvaraya Technological University — Jyothy Institute of Technology",
         degree: "Bachelor of Engineering",
         field: "Computer Science",
         location: "Bangalore, India",
@@ -546,18 +572,18 @@ const sections = [
         index: "01"
     },
     {
-        id: "expertise",
-        label: "Expertise",
-        index: "02"
-    },
-    {
         id: "experience",
         label: "Experience",
-        index: "03"
+        index: "02"
     },
     {
         id: "work",
         label: "Projects",
+        index: "03"
+    },
+    {
+        id: "expertise",
+        label: "Expertise",
         index: "04"
     },
     {
@@ -1251,7 +1277,7 @@ function Hero() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "block text-ink",
-                                            children: "a Data & AI Engineer"
+                                            children: "a Data, Backend & AI Engineer"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
                                             lineNumber: 78,
@@ -1277,7 +1303,7 @@ function Hero() {
                                         delay: 0.45
                                     },
                                     className: "mt-6 max-w-xl text-base md:text-lg text-ink-soft leading-relaxed",
-                                    children: "I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence."
+                                    children: "I engineer data pipelines, backend systems, and cloud-native platforms that power reliable analytics and AI."
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
                                     lineNumber: 81,
@@ -1496,68 +1522,92 @@ function Hero() {
                                 delay: 0.55
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative",
+                                className: "flex flex-col items-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        "aria-hidden": true,
-                                        className: "absolute -inset-3 md:-inset-4 rounded-full border border-rule-strong"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
-                                        lineNumber: 194,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        "aria-hidden": true,
-                                        className: "absolute -inset-1 rounded-full bg-ink/5 blur-xl transition-opacity duration-700 opacity-0 hover:opacity-100"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
-                                        lineNumber: 199,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative aspect-square w-[clamp(220px,28vw,360px)] overflow-hidden rounded-full border border-rule-strong bg-paper-sunken shadow-[0_30px_60px_-25px_rgba(0,0,0,0.25)]",
+                                        className: "relative",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                src: "/bhavana_headshot.png",
-                                                alt: `${__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$lib$2f$portfolio$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["profile"].name} — portrait`,
-                                                className: "h-full w-full object-cover",
-                                                width: 480,
-                                                height: 480
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                "aria-hidden": true,
+                                                className: "absolute -inset-3 md:-inset-4 rounded-full border border-rule-strong"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
-                                                lineNumber: 206,
-                                                columnNumber: 17
+                                                lineNumber: 195,
+                                                columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 "aria-hidden": true,
-                                                className: "pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-ink/5"
+                                                className: "absolute -inset-1 rounded-full bg-ink/5 blur-xl transition-opacity duration-700 opacity-0 hover:opacity-100"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
-                                                lineNumber: 214,
-                                                columnNumber: 17
+                                                lineNumber: 200,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative aspect-square w-[clamp(220px,28vw,360px)] overflow-hidden rounded-full border border-rule-strong bg-paper-sunken shadow-[0_30px_60px_-25px_rgba(0,0,0,0.25)]",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/bhavana_headshot.png",
+                                                        alt: `${__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$lib$2f$portfolio$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["profile"].name} — portrait`,
+                                                        className: "h-full w-full object-cover",
+                                                        width: 480,
+                                                        height: 480
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
+                                                        lineNumber: 207,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        "aria-hidden": true,
+                                                        className: "pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-ink/5"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
+                                                        lineNumber: 215,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
+                                                lineNumber: 205,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-paper px-3 py-1 shadow-sm border border-rule",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "font-mono-label text-[9px] uppercase tracking-[0.2em] text-ink-mute",
+                                                    children: [
+                                                        __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$lib$2f$portfolio$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["profile"].firstName,
+                                                        " · 2026"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
+                                                    lineNumber: 222,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
+                                                lineNumber: 221,
+                                                columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 193,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-paper px-3 py-1 shadow-sm border border-rule",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-mono-label text-[9px] uppercase tracking-[0.2em] text-ink-mute",
-                                            children: [
-                                                __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$lib$2f$portfolio$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["profile"].firstName,
-                                                " · 2026"
-                                            ]
-                                        }, void 0, true, {
+                                        className: "mt-4 md:mt-6 lg:mt-8 flex justify-center w-full",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "max-w-[36rem] text-center text-sm md:text-base text-ink-soft px-4",
+                                            children: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$lib$2f$portfolio$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["profile"].positioning
+                                        }, void 0, false, {
                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
-                                            lineNumber: 221,
+                                            lineNumber: 229,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/hero.tsx",
-                                        lineNumber: 220,
+                                        lineNumber: 228,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -2056,16 +2106,13 @@ function About() {
                                 className: "flex flex-col gap-7 max-w-3xl",
                                 gap: 0.12,
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$lib$2f$portfolio$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["profile"].manifesto.map((para, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$primitives$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StaggerItem"], {
-                                        as: "p",
-                                        children: i === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-display text-xl md:text-[1.6rem] leading-[1.55] text-ink-soft",
+                                        as: "div",
+                                        children: i === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "manifesto-first text-ink-soft",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "float-left mr-3 font-display font-medium text-[4.5rem] md:text-[5rem] leading-[0.78] text-ink",
-                                                    style: {
-                                                        paddingTop: "0.12em",
-                                                        marginTop: "0.08em"
-                                                    },
+                                                    className: "drop-cap",
+                                                    "aria-hidden": true,
                                                     children: para.charAt(0)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
@@ -2073,10 +2120,11 @@ function About() {
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "manifesto-first-body",
                                                     children: para.slice(1)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                                    lineNumber: 64,
+                                                    lineNumber: 58,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
@@ -2084,12 +2132,12 @@ function About() {
                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
                                             lineNumber: 54,
                                             columnNumber: 21
-                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-base md:text-lg leading-[1.75] text-ink-soft",
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "manifesto-body text-ink-soft",
                                             children: para
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 61,
                                             columnNumber: 21
                                         }, this)
                                     }, i, false, {
@@ -2127,7 +2175,7 @@ function About() {
                                                 children: "How I work"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 76,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2140,20 +2188,20 @@ function About() {
                                                         children: "no surprises"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 79,
                                                         columnNumber: 19
                                                     }, this),
                                                     "."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 77,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 75,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2161,18 +2209,18 @@ function About() {
                                         children: "The same lens applies whether I'm shipping a schema, an ETL pipeline, or an ML feature store."
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                lineNumber: 82,
+                                lineNumber: 74,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                            lineNumber: 81,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$primitives$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Stagger"], {
@@ -2187,23 +2235,23 @@ function About() {
                                         index: i + 1
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 100,
                                         columnNumber: 17
                                     }, this)
                                 }, p.title, false, {
                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 95,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                            lineNumber: 97,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                    lineNumber: 80,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this)
             ]
@@ -2225,29 +2273,29 @@ function About() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "md:col-span-2",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "numeral block font-display font-medium text-ink leading-none text-[clamp(3rem,8vw,5rem)] tracking-[-0.04em] transition-transform duration-500 group-hover:translate-x-1",
+                    className: "numeral block font-display font-medium text-ink leading-none text-[clamp(3rem,8vw,4rem)] tracking-[-0.04em] transition-transform duration-500 group-hover:translate-x-1",
                     children: String(index).padStart(2, "0")
                 }, void 0, false, {
                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                    lineNumber: 130,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                lineNumber: 129,
+                lineNumber: 121,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "md:col-span-5",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                    className: "font-display text-2xl md:text-3xl text-ink font-medium leading-tight",
+                    className: "font-display text-xl md:text-2xl text-ink font-medium leading-tight",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "italic font-normal text-ink-soft",
                             children: principle.title.split(" ")[0]
                         }, void 0, false, {
                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                            lineNumber: 138,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -2255,12 +2303,12 @@ function About() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                    lineNumber: 137,
+                    lineNumber: 129,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                lineNumber: 136,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2270,18 +2318,18 @@ function About() {
                     children: principle.body
                 }, void 0, false, {
                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                    lineNumber: 145,
+                    lineNumber: 137,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-                lineNumber: 144,
+                lineNumber: 136,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/about.tsx",
-        lineNumber: 127,
+        lineNumber: 119,
         columnNumber: 5
     }, this);
 }
@@ -2576,20 +2624,8 @@ function Projects() {
                             index: "04",
                             eyebrow: "Selected Work",
                             title: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                children: [
-                                    "Engineering, not",
-                                    " ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "italic font-normal text-ink-soft",
-                                        children: "screenshots"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                        lineNumber: 108,
-                                        columnNumber: 17
-                                    }, void 0),
-                                    "."
-                                ]
-                            }, void 0, true)
+                                children: "Engineering that solves problems."
+                            }, void 0, false)
                         }, void 0, false, {
                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
                             lineNumber: 102,
@@ -2610,10 +2646,10 @@ function Projects() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "max-w-lg text-base md:text-lg text-ink-soft leading-relaxed",
-                                            children: "Seven systems shipped across cloud, transactional, and ML surfaces — drag or use the arrows to explore each case study."
+                                            children: "Built to solve real problems. Data pipelines, distributed backends, and applied machine learning — explore the problem, approach, and outcome behind each build."
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 116,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2638,17 +2674,17 @@ function Projects() {
                                                             strokeLinejoin: "round"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                                            lineNumber: 131,
+                                                            lineNumber: 129,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 128,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                                    lineNumber: 124,
+                                                    lineNumber: 122,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2660,7 +2696,7 @@ function Projects() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                                    lineNumber: 134,
+                                                    lineNumber: 132,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2682,29 +2718,29 @@ function Projects() {
                                                             strokeLinejoin: "round"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                                            lineNumber: 144,
+                                                            lineNumber: 142,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                                        lineNumber: 143,
+                                                        lineNumber: 141,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                                    lineNumber: 137,
+                                                    lineNumber: 135,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                    lineNumber: 116,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2719,23 +2755,23 @@ function Projects() {
                                             children: category
                                         }, category, false, {
                                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                            lineNumber: 152,
+                                            lineNumber: 150,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                    lineNumber: 150,
+                                    lineNumber: 148,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                            lineNumber: 115,
-                            columnNumber: 11
+                            lineNumber: 114,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                        lineNumber: 114,
+                        lineNumber: 113,
                         columnNumber: 9
                     }, this)
                 ]
@@ -2745,49 +2781,56 @@ function Projects() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                ref: trackRef,
-                onScroll: onScroll,
-                onMouseDown: onMouseDown,
-                onMouseMove: isDragging ? onMouseMove : undefined,
-                onMouseUp: endDrag,
-                onMouseLeave: endDrag,
-                style: {
-                    cursor: isDragging ? "grabbing" : "grab",
-                    paddingLeft: "clamp(1.25rem, 4vw, 3rem)",
-                    paddingRight: "clamp(1.25rem, 4vw, 3rem)"
-                },
-                className: "flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 select-none",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$motion$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                        initial: false,
-                        mode: "popLayout",
-                        children: filteredProjects.map((project, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ProjectCard, {
-                                project: project,
-                                index: i + 1,
-                                isActive: i === activeIndex,
-                                onClick: ()=>scrollTo(i)
-                            }, project.id, false, {
-                                fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                                lineNumber: 190,
-                                columnNumber: 13
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                        lineNumber: 188,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "shrink-0 w-8 md:w-16",
-                        "aria-hidden": true
-                    }, void 0, false, {
-                        fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                        lineNumber: 201,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                className: "container-editorial",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    ref: trackRef,
+                    onScroll: onScroll,
+                    onMouseDown: onMouseDown,
+                    onMouseMove: isDragging ? onMouseMove : undefined,
+                    onMouseUp: endDrag,
+                    onMouseLeave: endDrag,
+                    style: {
+                        cursor: isDragging ? "grabbing" : "grab",
+                        paddingLeft: 0,
+                        paddingRight: 0
+                    },
+                    className: "flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 select-none",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$motion$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                            initial: false,
+                            mode: "popLayout",
+                            children: filteredProjects.map((project, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ProjectCard, {
+                                    project: project,
+                                    index: i + 1,
+                                    isActive: i === activeIndex,
+                                    onClick: ()=>scrollTo(i)
+                                }, project.id, false, {
+                                    fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
+                                    lineNumber: 189,
+                                    columnNumber: 13
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
+                            lineNumber: 187,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "shrink-0 w-8 md:w-16",
+                            "aria-hidden": true
+                        }, void 0, false, {
+                            fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
+                            lineNumber: 200,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
+                    lineNumber: 173,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/projects.tsx",
-                lineNumber: 174,
+                lineNumber: 172,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3031,7 +3074,7 @@ function Projects() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
-                className: "max-w-2xl",
+                className: "max-w-2xl max-h-[90vh] overflow-y-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
                         children: [
@@ -5479,6 +5522,16 @@ function Projects() {
     }, this);
 }
 /* ---------- Metric extractor ---------- */ function extractMetric(project) {
+    // Prefer explicit metric fields when present (set in `portfolio-data.ts`)
+    if (project.metric !== undefined && project.metric !== null) {
+        const raw = project.metric;
+        const value = typeof raw === "number" ? String(raw) : raw;
+        const caption = project.metricDescription || project.outcome?.split(/[.]/)[0] || "";
+        return {
+            value,
+            caption
+        };
+    }
     for (const note of project.engineering){
         const percentMatch = note.match(/(\d+%)/);
         if (percentMatch) return {
@@ -5488,10 +5541,20 @@ function Projects() {
     }
     for (const note of project.engineering){
         const numMatch = note.match(/(\d+(?:,\d{3})?(?:\.\d+)?(?:K|M|\+)?)\b/);
-        if (numMatch) return {
-            value: numMatch[1],
-            caption: project.outcome.split(/[.]/)[0]
-        };
+        if (numMatch) {
+            const raw = numMatch[1];
+            // Accept only large/meaningful metrics: contains K/M, has decimal, or >= 10
+            const hasKMorM = /[KM]/i.test(raw);
+            const hasDecimal = /\./.test(raw);
+            const numeric = parseFloat(raw.replace(/[+,KMkm]/g, ""));
+            if (hasKMorM || hasDecimal || !Number.isNaN(numeric) && numeric >= 10) {
+                return {
+                    value: raw,
+                    caption: project.outcome.split(/[.]/)[0]
+                };
+            }
+        // otherwise ignore small counts (e.g. '5+' document formats) and keep searching
+        }
     }
     if (project.outcome) return {
         value: "•",
@@ -6235,16 +6298,7 @@ function Education() {
                                     lineNumber: 28,
                                     columnNumber: 17
                                 }, void 0),
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "italic font-normal text-ink-soft",
-                                    children: "continents"
-                                }, void 0, false, {
-                                    fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                    lineNumber: 29,
-                                    columnNumber: 17
-                                }, void 0),
-                                "."
+                                "perspectives"
                             ]
                         }, void 0, true)
                     }, void 0, false, {
@@ -6261,15 +6315,15 @@ function Education() {
                     delay: 0.1,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed",
-                        children: "Formal training in computer science on both sides of the Pacific — undergraduate foundations in Bangalore, graduate depth at CSU Fullerton."
+                        children: "Formal CS training in India and the U.S.: a Bachelor in Bangalore and an MS at CSU Fullerton, paired with hands-on data engineering and teaching experience."
                     }, void 0, false, {
                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                        lineNumber: 36,
+                        lineNumber: 35,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                    lineNumber: 35,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6288,7 +6342,7 @@ function Education() {
                                                 children: ed.current ? "In progress" : "Completed"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                                lineNumber: 52,
+                                                lineNumber: 51,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6296,13 +6350,13 @@ function Education() {
                                                 children: String(i + 1).padStart(2, "0")
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                                lineNumber: 55,
+                                                lineNumber: 54,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 50,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6310,7 +6364,7 @@ function Education() {
                                         children: ed.period
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 59,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6319,7 +6373,7 @@ function Education() {
                                         children: ed.institution
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 63,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6330,7 +6384,7 @@ function Education() {
                                                 children: ed.degree
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                                lineNumber: 72,
+                                                lineNumber: 71,
                                                 columnNumber: 19
                                             }, this),
                                             " · ",
@@ -6338,7 +6392,7 @@ function Education() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 70,
                                         columnNumber: 17
                                     }, this),
                                     ed.location && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6346,23 +6400,23 @@ function Education() {
                                         children: ed.location
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 77,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                                lineNumber: 46,
+                                lineNumber: 45,
                                 columnNumber: 15
                             }, this)
                         }, ed.id, false, {
                             fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                            lineNumber: 45,
+                            lineNumber: 44,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/components/portfolio/education.tsx",
-                    lineNumber: 43,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             ]

@@ -1410,10 +1410,6 @@
     grid-row-start: 1;
   }
 
-  .float-left {
-    float: left;
-  }
-
   .container {
     width: 100%;
   }
@@ -1546,10 +1542,6 @@
 
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
-  }
-
-  .mr-3 {
-    margin-right: calc(var(--spacing) * 3);
   }
 
   .mb-0\.5 {
@@ -1829,6 +1821,10 @@
     max-height: var(--radix-select-content-available-height);
   }
 
+  .max-h-\[90vh\] {
+    max-height: 90vh;
+  }
+
   .max-h-\[300px\] {
     max-height: 300px;
   }
@@ -1967,6 +1963,14 @@
 
   .max-w-\[9rem\] {
     max-width: 9rem;
+  }
+
+  .max-w-\[36rem\] {
+    max-width: 36rem;
+  }
+
+  .max-w-\[42rem\] {
+    max-width: 42rem;
   }
 
   .max-w-\[200px\] {
@@ -3071,10 +3075,6 @@
     font-size: 1.625rem;
   }
 
-  .text-\[4\.5rem\] {
-    font-size: 4.5rem;
-  }
-
   .text-\[8px\] {
     font-size: 8px;
   }
@@ -3127,17 +3127,12 @@
     font-size: clamp(2.75rem, 7vw, 6.5rem);
   }
 
-  .text-\[clamp\(3rem\,8vw\,5rem\)\] {
-    font-size: clamp(3rem, 8vw, 5rem);
+  .text-\[clamp\(3rem\,8vw\,4rem\)\] {
+    font-size: clamp(3rem, 8vw, 4rem);
   }
 
   .text-\[clamp\(3rem\,14vw\,11rem\)\] {
     font-size: clamp(3rem, 14vw, 11rem);
-  }
-
-  .leading-\[0\.78\] {
-    --tw-leading: .78;
-    line-height: .78;
   }
 
   .leading-\[0\.85\] {
@@ -3173,16 +3168,6 @@
   .leading-\[1\.25\] {
     --tw-leading: 1.25;
     line-height: 1.25;
-  }
-
-  .leading-\[1\.55\] {
-    --tw-leading: 1.55;
-    line-height: 1.55;
-  }
-
-  .leading-\[1\.75\] {
-    --tw-leading: 1.75;
-    line-height: 1.75;
   }
 
   .leading-none {
@@ -5726,6 +5711,30 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:mt-6 {
+      margin-top: calc(var(--spacing) * 6);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:mt-8 {
+      margin-top: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:mt-14 {
+      margin-top: calc(var(--spacing) * 14);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:mt-16 {
+      margin-top: calc(var(--spacing) * 16);
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:mt-20 {
       margin-top: calc(var(--spacing) * 20);
     }
@@ -6095,12 +6104,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:text-\[1\.6rem\] {
-      font-size: 1.6rem;
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:text-\[1\.85rem\] {
       font-size: 1.85rem;
     }
@@ -6115,12 +6118,6 @@
   @media (min-width: 48rem) {
     .md\:text-\[4\.2rem\] {
       font-size: 4.2rem;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:text-\[5rem\] {
-      font-size: 5rem;
     }
   }
 
@@ -6205,6 +6202,30 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:mt-8 {
+      margin-top: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:mt-10 {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:mt-16 {
+      margin-top: calc(var(--spacing) * 16);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:mt-20 {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:w-80 {
       width: calc(var(--spacing) * 80);
     }
@@ -6213,6 +6234,12 @@
   @media (min-width: 64rem) {
     .lg\:grid-cols-12 {
       grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:justify-center {
+      justify-content: center;
     }
   }
 
@@ -7149,6 +7176,61 @@
 
 .dark .paper-grain:before {
   mix-blend-mode: screen;
+}
+
+.dark .paper-grain:before .manifesto-first {
+  font-family: var(--font-outfit);
+  font-size: var(--step-1);
+  margin: 0;
+  line-height: 1.65;
+  display: block;
+  overflow: visible;
+}
+
+.dark .paper-grain:before .manifesto-first-body {
+  font-size: var(--step-0);
+  margin-left: clamp(3rem, 8vw, 4.5rem);
+  line-height: 1.8;
+  display: block;
+}
+
+.dark .paper-grain:before .drop-cap {
+  float: left;
+  font-family: var(--font-cormorant);
+  color: var(--ink);
+  margin-top: .06em;
+  margin-right: .6rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: .78;
+  display: inline-block;
+}
+
+.dark .paper-grain:before .manifesto-body {
+  font-size: var(--step-0);
+  margin: 0;
+  line-height: 1.9;
+}
+
+@media (max-width: 640px) {
+  .dark .paper-grain:before .drop-cap {
+    float: none;
+    margin: 0 0 .6rem;
+    font-size: clamp(2.2rem, 8vw, 3.4rem);
+    display: block;
+  }
+
+  .dark .paper-grain:before .manifesto-first {
+    font-size: var(--step-0);
+    line-height: 1.5;
+  }
+
+  .dark .paper-grain:before .manifesto-first-body {
+    margin-left: 0;
+  }
+}
+
+.dark .paper-grain:before {
   opacity: .04;
 }
 

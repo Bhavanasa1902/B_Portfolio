@@ -232,7 +232,7 @@ function ProjectCard(_a) {
     </react_1.motion.article>
       </dialog_1.DialogTrigger>
 
-      <dialog_1.DialogContent className="max-w-2xl">
+      <dialog_1.DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <dialog_1.DialogHeader>
           <dialog_1.DialogTitle>{project.title}</dialog_1.DialogTitle>
           <dialog_1.DialogDescription>{project.category}</dialog_1.DialogDescription>

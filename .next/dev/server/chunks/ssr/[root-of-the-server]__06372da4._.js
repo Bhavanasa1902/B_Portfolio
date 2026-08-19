@@ -360,18 +360,27 @@ const profile = {
     lastName: "Athavane",
     role: "Data Engineer",
     // Single line positioning statement used across hero / meta / footer
-    positioning: "Entry-level data engineer building reliable pipelines and analytics-ready data systems.",
+    positioning: "I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence.",
     // Long-form manifesto used in About
     manifesto: [
-        "I started in Bangalore working on OLTP systems with Oracle and SQL Server, then moved to California for graduate school at CSU Fullerton. That path gave me hands-on exposure to both production systems and modern data tooling.",
-        "What keeps me focused is reliable execution: schemas that reflect business logic, pipelines that are observable, and validation checks that catch issues before they become stakeholder problems.",
-        "As an entry-level data engineer, I am building depth at the intersection of cloud warehouses, transactional databases, and ML-ready pipelines — with an emphasis on measurable outcomes, clean handoffs, and maintainable systems."
+        "I build the systems that let AI and data scale — from backend to cloud.",
+        "I focus on engineering reliable backend systems, cloud-native architecture, and ML-ready data pipelines that teams can build on with confidence.",
+        "My work spans database engineering, REST API design, cloud platform integration, and applied machine learning — with a focus on measurable outcomes: lower latency, cleaner interfaces, and systems that hold up under real usage.",
+        "Through platform engineering and database co-ops, I've built fault-diagnostic pipelines on Google Cloud, integrating platform monitoring data with ticketing and asset-management systems through REST APIs, and worked on Python-based backend integrations across Oracle, MySQL, and PostgreSQL. In enterprise systems roles, I've contributed to database performance work and automated ETL workflows in Python. As a Graduate Teaching Associate at CSUF, I run labs and office hours in SQL and business analytics, helping students turn ambiguous business questions into structured, queryable analysis."
     ],
     location: "Fullerton, California, USA",
     email: "bhavanasathavane@gmail.com",
     phone: "+1 (657) 751-9230",
-    availability: "Open to entry-level data engineering roles",
-    availabilityNote: "Available immediately — full-time entry-level roles",
+    availability: "Open to data platform / AI engineering roles",
+    availabilityNote: "Open to full-time roles in data platforms, cloud, and AI engineering",
+    archetype: "developer",
+    seniority: "mid",
+    focusAreas: [
+        "AI",
+        "Cloud Computing",
+        "Fintech",
+        "Telecom"
+    ],
     socials: [
         {
             label: "LinkedIn",
@@ -392,39 +401,39 @@ const profile = {
     // Hero stat band — verified metrics from the source portfolio
     stats: [
         {
-            value: "80%",
-            label: "Manual effort removed with automated pipelines",
-            note: "Automation"
+            value: "4",
+            label: "Shipped data & AI projects",
+            note: "Products"
         },
         {
-            value: "0.95",
-            label: "ROC-AUC on graph-based fraud detection",
-            note: "Performance"
+            value: "8+",
+            label: "Production data pipelines",
+            note: "Pipelines"
         },
         {
-            value: "55%",
-            label: "Query latency reduced across relational systems",
-            note: "Optimization"
+            value: "500K+",
+            label: "Transactions & telemetry processed",
+            note: "Scale"
         },
         {
-            value: "50+",
-            label: "Students mentored in analytics & SQL",
-            note: "Mentorship"
+            value: "3",
+            label: "Years in production systems",
+            note: "Experience"
         }
     ],
     // Three positioning pillars shown as "Principles"
     principles: [
         {
-            title: "Reliable pipelines",
-            body: "ETL and backend flows that avoid surprises, keep data fresh, and scale with demand rather than against it."
+            title: "Reliable systems",
+            body: "Backend and ETL flows engineered to avoid surprises, stay observable, and scale with demand rather than against it."
         },
         {
-            title: "Production-ready data",
-            body: "Databases, schemas, and observability designed so teams can ship analytics and ML with confidence, not caveats."
+            title: "Production-ready foundations",
+            body: "Databases, APIs, and cloud infrastructure designed so teams can ship analytics, ML, and platform features with confidence, not caveats."
         },
         {
             title: "Impact-first work",
-            body: "Outcomes over activity: faster queries, lower batch time, and clearer business insights — measured, not asserted."
+            body: "Outcomes over activity: faster queries, lower latency, cleaner architecture — measured, not asserted."
         }
     ],
     // Quick tech tags surfaced in hero
@@ -432,13 +441,15 @@ const profile = {
         "SQL",
         "Python",
         "GCP",
-        "BigQuery",
         "Vertex AI",
+        "BigQuery",
+        "REST APIs",
+        "Docker",
+        "Flask",
+        "React",
         "ETL",
-        "Tableau",
-        "NLP",
-        "RAG",
-        "Oracle"
+        "Oracle",
+        "PostgreSQL"
     ]
 };
 const experience = [
@@ -456,7 +467,7 @@ const experience = [
                 period: "Jan 2026 — May 2026",
                 summary: "Running weekly labs, holding office hours, and grading structured assignments for a business analytics cohort moving from Excel into SQL.",
                 highlights: [
-                    "Mentored 50+ students per semester across Excel, SQL, and business analytics, holding office hours and grading structured assignments.",
+                    "Mentored 50+ students per semester across Excel, SQL, and business analytics, achieving a 95% assignment completion rate and improving average quiz scores by 18% through targeted labs and feedback.",
                     "Designed and led weekly labs covering VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query, and SQL — moving students from spreadsheet manipulation toward query-based analysis.",
                     "Helped learners translate ambiguous business questions into structured, queryable analysis with measurable success criteria."
                 ],
@@ -501,7 +512,7 @@ const experience = [
                 period: "Sep 2025 — Dec 2025",
                 summary: "Fall rotation focused on the database layer of the same AI inference platform — schema design, ETL consolidation, and Python service integrations.",
                 highlights: [
-                    "Designed 4+ relational database schemas in PostgreSQL and MySQL for AI-driven inference pipelines, improving average query response time by ~15% through composite indexing and normalization.",
+                    "Designed and optimized relational database schemas across Oracle, MySQL, and PostgreSQL for AI-driven backend systems, reducing average query latency by 55% through indexing, normalization, and query tuning.",
                     "Consolidated 3 redundant ETL scheduled jobs into a single stored procedure pipeline, materially cutting average batch completion time and operational surface area.",
                     "Built Python REST API integrations connecting backend services to OLTP databases, reducing average DB round-trips per request by ~40%."
                 ],
@@ -561,21 +572,27 @@ const projects = [
     {
         id: "fraud-detection",
         title: "Financial Fraud Detection Pipeline",
-        category: "Anomaly Detection · Vertex AI",
-        tagline: "End-to-end fraud detection on Google Cloud",
+        category: "ANOMALY DETECTION",
+        tagline: "Ensemble ML system for detecting and explaining suspicious transactions",
+        metric: 0.9497,
+        metricDescription: "ROC-AUC ACROSS 200K+ TRANSACTIONS",
         problem: "Flag high-risk transactions in real time without flooding analysts with false positives — a classic precision-vs-recall tension at scale.",
-        approach: "Built an end-to-end pipeline on Vertex AI covering transaction ingestion, feature engineering, and anomaly classification, with model outputs piped into a real-time alerting layer.",
-        outcome: "Achieved 89% precision on transaction classification across 1M+ synthetic transactions, integrated directly into a live fraud response workflow.",
+        approach: "Built an ensemble anomaly detection system combining XGBoost, Isolation Forest, and a PyTorch autoencoder, served through a Flask REST API. Used Neo4j graph analytics to surface relationship patterns between accounts and transactions that single-model approaches miss, with SHAP for model explainability. Added automated email notifications on every transaction, alerting users whether it was flagged as suspicious or processed successfully.",
+        outcome: "Achieved 0.9497 ROC-AUC across 200K+ transactions, with SHAP-based explanations attached to every flagged transaction and automated email alerts closing the loop between detection and user response.",
         engineering: [
-            "Ingested and processed 1M+ synthetic transactions through a feature engineering pipeline.",
-            "Trained and deployed an anomaly detection model achieving 89% precision on transaction classification.",
-            "Integrated model outputs with an alerting system for real-time fraud response."
+            "Built a 3-model ensemble (XGBoost, Isolation Forest, PyTorch autoencoder) to balance precision and recall across imbalanced fraud data.",
+            "Applied Neo4j graph analytics to detect relationship-based fraud patterns beyond individual transaction features.",
+            "Integrated SHAP explainability so every fraud prediction ships with a human-readable reason.",
+            "Built automated email notifications for every transaction — flagged or clean — closing the loop between model output and user response."
         ],
         stack: [
-            "Vertex AI",
-            "BigQuery",
-            "Python",
-            "Cloud Functions"
+            "XGBoost",
+            "Isolation Forest",
+            "PyTorch",
+            "SHAP",
+            "Neo4j",
+            "Flask",
+            "Python"
         ],
         tags: [
             "Data & ML",
@@ -587,21 +604,21 @@ const projects = [
     {
         id: "nlp-content-modelling",
         title: "Document Intelligence with NLP",
-        category: "CNN · OCR · Document Processing",
-        tagline: "Turning unstructured documents into structured metadata",
-        problem: "Manual categorization of diverse document formats was slow, inconsistent, and impossible to scale across a 10K-document corpus.",
-        approach: "Developed an NLP pipeline using CNN models and OCR to extract and structure unstructured text from heterogeneous document formats, then classify text segments into structured metadata.",
-        outcome: "Reduced manual categorization effort across a 10K-document test corpus by automating extraction and classification end-to-end.",
+        category: "DOCUMENT INTELLIGENCE",
+        tagline: "Turning unstructured documents into structured, queryable data",
+        problem: "Manual categorization of diverse document formats was slow, inconsistent, and impossible to scale across a large, varied document corpus.",
+        approach: "Developed a document intelligence pipeline using a CNN for image-based layout detection and document-type classification, paired with OCR to extract and structure unstructured text from heterogeneous formats. Extracted text was then processed with NLP to classify content into structured metadata.",
+        outcome: "Automated categorization and structured data extraction across 5+ document formats, replacing manual review with an end-to-end CNN + OCR + NLP pipeline.",
         engineering: [
-            "Processed 5+ document formats using OCR and text cleaning pipelines.",
-            "Trained CNN models to classify text segments and extract structured metadata.",
-            "Reduced manual categorization effort for a 10K-document test corpus through automation."
+            "Trained a CNN to detect document layout and classify document type from scanned images",
+            "Built an OCR pipeline to extract and clean text from heterogeneous document formats",
+            "Applied NLP to classify extracted text into structured metadata",
+            "Processed 5+ distinct document formats through the full pipeline"
         ],
         stack: [
             "NLP",
             "OCR",
-            "TensorFlow",
-            "Python"
+            "TensorFlow"
         ],
         tags: [
             "Data & ML",
@@ -613,15 +630,15 @@ const projects = [
     {
         id: "textile-db",
         title: "Textile Inventory & Order System",
-        category: "Relational · Real-time · Reporting",
-        tagline: "Normalized schema for inventory, orders, and supply",
-        problem: "A textile business needed a single source of truth for orders, inventory, and supplier data — with real-time consistency and analytical reporting on top.",
-        approach: "Designed a fully normalized schema for orders, inventory, and supplier tracking. Built stored procedures to keep stock and pricing consistent in real time, with reporting queries layered for demand forecasting.",
-        outcome: "A single relational system that supports live transactions, enforces consistency, and powers demand forecasting and production planning.",
+        category: "RELATIONAL DATABASE",
+        tagline: "Normalized schema for inventory, orders, and supply chain",
+        problem: "Designed for a hypothetical textile business needing a single source of truth for orders, inventory, and supplier data — with real-time consistency and analytical reporting on top.",
+        approach: "Designed a normalized schema for orders, inventory, supplier tracking, and payment workflows as a personal project (no external payment processing integrated). Built stored procedures to keep stock and pricing consistent in real time, with reporting queries layered for demand forecasting.",
+        outcome: "A relational system supporting live transactions, enforcing referential integrity across orders, inventory, and suppliers, with built-in demand-forecasting queries for production planning.",
         engineering: [
-            "Created a normalized schema for orders, inventory, and supplier tracking.",
-            "Built stored procedures to keep stock and pricing consistent in real time.",
-            "Added reporting queries for demand forecasting and production planning."
+            "Created a normalized schema for orders, inventory, supplier tracking, and payment workflows",
+            "Built stored procedures (PL/SQL) to enforce real-time stock and pricing consistency",
+            "Wrote demand-forecasting queries to support production planning decisions"
         ],
         stack: [
             "Oracle",
@@ -632,21 +649,22 @@ const projects = [
         tags: [
             "Backend & DB"
         ],
+        bottomLink: "CODE ↗",
         codeHref: "https://github.com/Bhavanasa1902/textile-db",
         featured: true
     },
     {
         id: "ecommerce-app",
-        title: "E-Commerce Web Application",
-        category: "Additional Project · React · Firebase",
+        title: "E-Commerce Web Application (Internship Project)",
+        category: "FULL-STACK",
         tagline: "Full shopping experience with persistent cart",
-        problem: "Build a complete commerce experience — discovery, authentication, cart, and checkout — without a custom backend, using Firebase as the system of record.",
-        approach: "Implemented a React-based storefront with Firebase authentication, Firestore-backed cart persistence, dynamic product browsing across 5+ categories, and a secure checkout flow.",
-        outcome: "A responsive commerce app used to strengthen frontend architecture, authentication, and data-state management fundamentals.",
+        problem: "Design and build a production-style commerce experience — product discovery, authentication, cart, and checkout — with Firebase as the system of record for real-time state management.",
+        approach: "Engineered a responsive React storefront integrated with Firebase Authentication and Firestore, implementing persistent cart state, dynamic product discovery with multi-category search and filtering, and a checkout flow modeling real transaction logic.",
+        outcome: "A fully functional e-commerce application demonstrating strong command of frontend architecture, authentication flows, and real-time data synchronization.",
         engineering: [
-            "Implemented product discovery with search and filtering across 5+ product categories.",
-            "Built Firebase authentication, Firestore cart persistence, and a secure checkout flow.",
-            "Optimized app performance with lazy loading and client-side caching."
+            "Engineered product discovery with multi-category search and filtering for a responsive browsing experience",
+            "Implemented Firebase Authentication and Firestore-backed cart persistence with real-time sync",
+            "Built a checkout flow modeling real transaction logic and state management"
         ],
         stack: [
             "React",
@@ -657,21 +675,24 @@ const projects = [
         tags: [
             "Full-Stack"
         ],
+        bottomLink: "CODE ↗",
         codeHref: "https://github.com/Bhavanasa1902/ecommerce-app",
         featured: false
     },
     {
         id: "book-to-playlist",
         title: "Book to Playlist",
-        category: "Additional Project · LLM · Web App",
+        category: "DATA ENGINEERING / NLP",
         tagline: "Translating narrative themes into music",
-        problem: "Readers often want music that mirrors the emotional arc of a book — but matching narrative themes to songs is a manual, subjective task.",
-        approach: "Built an AI-powered web application that uses LLM analysis to extract book themes, emotions, and narrative elements, then queries the Spotify API to curate a matching playlist.",
-        outcome: "An interactive React interface that turns any book description into a curated, playable Spotify playlist in seconds.",
+        problem: "Matching narrative themes to music is a manual, subjective task with no structured way to search and retrieve relevant songs across large book and song datasets.",
+        approach: "Designed a semantic retrieval pipeline for book-to-music recommendation. Processed and structured raw book and song datasets (descriptions, lyrics, acoustic features, popularity metrics), then generated BERT embeddings to represent thematic and semantic content. Built a FAISS-based vector index for fast nearest-neighbor similarity search at scale, with PCA applied for dimensionality reduction to optimize retrieval performance. Served results through a Flask backend.",
+        outcome: "A functioning recommendation system that retrieves the top N songs matching a given book's themes, built on structured multi-source datasets and optimized for fast similarity search.",
         engineering: [
-            "Integrated an LLM to analyze book themes, emotions, and narrative elements from user input.",
-            "Connected the Spotify API to search and curate music matching extracted book characteristics.",
-            "Built an interactive React interface for book input and playlist visualization."
+            "Processed and structured multi-source datasets (book metadata, song lyrics, acoustic features) for downstream embedding generation",
+            "Generated BERT embeddings to represent semantic and thematic content for cross-domain similarity matching",
+            "Built a FAISS vector index for scalable nearest-neighbor retrieval",
+            "Applied PCA for dimensionality reduction to optimize search performance",
+            "Built a Flask backend to serve recommendation results"
         ],
         stack: [
             "LLM",
@@ -680,24 +701,26 @@ const projects = [
             "Python"
         ],
         tags: [
-            "Data & ML",
+            "LLM",
             "Full-Stack"
         ],
         codeHref: "https://github.com/Bhavanasa1902/book-to-playlist",
+        bottomLink: "CODE ↗",
         featured: false
     },
     {
         id: "cryptozombies",
         title: "CryptoZombies Arena",
-        category: "Additional Project · Blockchain · Web3",
+        category: "WEB3 / BLOCKCHAIN",
         tagline: "On-chain arena battles with NFT gameplay",
-        problem: "Build a fully on-chain game where battles, rewards, and state transitions live on Ethereum — not in a centralized database.",
-        approach: "Developed Solidity smart contracts for NFT-enabled gameplay and token interactions, connected a React front end with Web3 wallets, and designed game logic for battles, rewards, and on-chain state updates.",
-        outcome: "A playable blockchain game with seamless wallet onboarding and verifiable on-chain state.",
+        problem: "Build a fully on-chain game where battles, breeding, marketplace trades, and player rankings all live on Ethereum — not in a centralized database.",
+        approach: "Extended the CryptoZombies starter contracts into a full-featured NFT game, contributing across smart contract development, frontend implementation, and Web3 integration — including an NFT marketplace, a breeding system with custom naming, a turn-based battle system, and a real-time leaderboard pulling data from blockchain events. Built a responsive HTML/CSS/JavaScript frontend with MetaMask wallet integration for seamless on-chain interaction.",
+        outcome: "A playable blockchain game with a working NFT marketplace, breeding mechanics, battle system, and live leaderboard — all backed by verifiable on-chain state.",
         engineering: [
-            "Developed Solidity smart contracts for NFT-enabled gameplay and token interactions.",
-            "Connected a React front end with Web3 wallets for seamless player engagement.",
-            "Designed game logic for battles, rewards, and on-chain state updates."
+            "Extended Solidity smart contracts (Factory → Feeding → Attack → Marketplace) to add NFT marketplace and breeding functionality",
+            "Built a real-time leaderboard that ranks players and zombies using live blockchain event data",
+            "Integrated MetaMask wallet connection with account switching and persistent connection state",
+            "Implemented a turn-based battle system with win/loss tracking and level progression on-chain"
         ],
         stack: [
             "Solidity",
@@ -706,24 +729,26 @@ const projects = [
             "Ethereum"
         ],
         tags: [
-            "Web3",
-            "Full-Stack"
+            "WEB3",
+            "Blockchain"
         ],
         codeHref: "https://github.com/Bhavanasa1902/CryptoZombies-Arena",
+        bottomLink: "CODE ↗",
         featured: false
     },
     {
         id: "titanfund",
         title: "TitanFund — Portfolio Analytics",
-        category: "Analytics Dashboard · Fintech",
-        tagline: "Real-time portfolio insights and metrics",
-        problem: "Investors need a single pane of glass for portfolio performance — combining live metrics, historical context, and exploratory filtering.",
-        approach: "Built a dashboard platform for tracking investment performance and portfolio metrics, connected backend analytics to frontend visualizations for real-time data updates, and enabled dynamic filtering and charting.",
-        outcome: "A dashboard that turns raw fund data into explorable portfolio metrics with real-time visualization updates.",
+        category: "BLOCKCHAIN / DATA MODELING",
+        tagline: "Real-time, on-chain crowdfunding data model",
+        problem: "Crowdfunding platforms need transparent, verifiable tracking of contributions and fund withdrawals — without a centralized authority controlling the data or the money.",
+        approach: "Built a blockchain-based crowdfunding platform where campaign data, contributions, and withdrawal requests are structured and stored on-chain via Solidity smart contracts. Designed the data flow for campaign creation, contribution tracking, and a withdrawal-approval system where contributors vote on fund releases — ensuring every state change is queryable and auditable through on-chain events. Built a Next.js frontend to surface this structured on-chain data to users in real time.",
+        outcome: "A working platform where campaign, contribution, and withdrawal data is fully structured on-chain, queryable via smart contract state and events, and enforced without reliance on a centralized database.",
         engineering: [
-            "Built a dashboard experience for tracking investment performance and portfolio metrics.",
-            "Connected backend analytics to frontend visualizations for real-time data updates.",
-            "Enabled users to explore fund performance with dynamic filtering and charting."
+            "Designed on-chain data structures for campaigns, contributions, and withdrawal requests using Solidity",
+            "Built a contributor-approval workflow where fund withdrawals require verifiable on-chain votes before release",
+            "Queried and surfaced structured blockchain event data through a Next.js frontend",
+            "Integrated MetaMask and Web3.js for wallet-based transaction handling"
         ],
         stack: [
             "React",
@@ -732,10 +757,11 @@ const projects = [
             "Visualization"
         ],
         tags: [
-            "Data & ML",
-            "Full-Stack"
+            "Analytics",
+            "Dashboard"
         ],
         codeHref: "https://github.com/Bhavanasa1902/TitanFund",
+        bottomLink: "CODE ↗",
         featured: false
     }
 ];
@@ -801,23 +827,23 @@ const skillGroups = [
         skills: [
             {
                 label: "Google Cloud Platform (GCP)",
-                value: 80
+                value: 88
             },
             {
                 label: "Vertex AI / ML Pipelines",
-                value: 72
+                value: 80
             },
             {
                 label: "BigQuery ML / Analytics",
-                value: 74
+                value: 78
             },
             {
                 label: "LLM Integration & Semantic Search",
-                value: 70
+                value: 74
             },
             {
                 label: "NLP & Text Analytics",
-                value: 66
+                value: 72
             }
         ]
     },
@@ -861,7 +887,7 @@ const education = [
     },
     {
         id: "jyothy",
-        institution: "Jyothy Institute of Technology",
+        institution: "Visvesvaraya Technological University — Jyothy Institute of Technology",
         degree: "Bachelor of Engineering",
         field: "Computer Science",
         location: "Bangalore, India",
@@ -880,18 +906,18 @@ const sections = [
         index: "01"
     },
     {
-        id: "expertise",
-        label: "Expertise",
-        index: "02"
-    },
-    {
         id: "experience",
         label: "Experience",
-        index: "03"
+        index: "02"
     },
     {
         id: "work",
         label: "Projects",
+        index: "03"
+    },
+    {
+        id: "expertise",
+        label: "Expertise",
         index: "04"
     },
     {
@@ -984,17 +1010,17 @@ function Home() {
                         lineNumber: 44,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$expertise$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Expertise"], {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$experience$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Experience"], {}, void 0, false, {
                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/page.tsx",
                         lineNumber: 45,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$experience$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Experience"], {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$projects$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Projects"], {}, void 0, false, {
                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/page.tsx",
                         lineNumber: 46,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$projects$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Projects"], {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$B_Portfolio$2d$main$2f$B_Portfolio$2f$src$2f$components$2f$portfolio$2f$expertise$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Expertise"], {}, void 0, false, {
                         fileName: "[project]/Downloads/B_Portfolio-main/B_Portfolio/src/app/page.tsx",
                         lineNumber: 47,
                         columnNumber: 9
