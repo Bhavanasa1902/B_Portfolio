@@ -104,19 +104,17 @@ export function Projects() {
             eyebrow="Selected Work"
             title={
               <>
-                Engineering, not{" "}
-                <span className="italic font-normal text-ink-soft">screenshots</span>.
+                Engineering that solves problems.
               </>
             }
           />
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-8 flex flex-col gap-6">
+            <div className="mt-8 flex flex-col gap-6">
             <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
               <p className="max-w-lg text-base md:text-lg text-ink-soft leading-relaxed">
-                Seven systems shipped across cloud, transactional, and ML surfaces —
-                drag or use the arrows to explore each case study.
+                Built to solve real problems. Data pipelines, distributed backends, and applied machine learning — explore the problem, approach, and outcome behind each build.
               </p>
 
               {/* Arrow controls */}
@@ -352,7 +350,7 @@ function ProjectCard({
     </motion.article>
       </DialogTrigger>
 
-      <DialogContent className="max-w-2xl">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>{project.title}</DialogTitle>
           <DialogDescription>{project.category}</DialogDescription>
@@ -608,13 +606,30 @@ function DashboardArt({ stroke, accent, alert }: { stroke: string; accent: strin
 
 /* ---------- Metric extractor ---------- */
 function extractMetric(project: ProjectEntry): { value: string; caption: string } | null {
+  // Prefer explicit metric fields when present (set in `portfolio-data.ts`)
+  if ((project as any).metric !== undefined && (project as any).metric !== null) {
+    const raw = (project as any).metric;
+    const value = typeof raw === "number" ? String(raw) : raw;
+    const caption = (project as any).metricDescription || project.outcome?.split(/[.]/)[0] || "";
+    return { value, caption };
+  }
   for (const note of project.engineering) {
     const percentMatch = note.match(/(\d+%)/);
     if (percentMatch) return { value: percentMatch[1], caption: project.outcome.split(/[.]/)[0] };
   }
   for (const note of project.engineering) {
     const numMatch = note.match(/(\d+(?:,\d{3})?(?:\.\d+)?(?:K|M|\+)?)\b/);
-    if (numMatch) return { value: numMatch[1], caption: project.outcome.split(/[.]/)[0] };
+    if (numMatch) {
+      const raw = numMatch[1];
+      // Accept only large/meaningful metrics: contains K/M, has decimal, or >= 10
+      const hasKMorM = /[KM]/i.test(raw);
+      const hasDecimal = /\./.test(raw);
+      const numeric = parseFloat(raw.replace(/[+,KMkm]/g, ""));
+      if (hasKMorM || hasDecimal || (!Number.isNaN(numeric) && numeric >= 10)) {
+        return { value: raw, caption: project.outcome.split(/[.]/)[0] };
+      }
+      // otherwise ignore small counts (e.g. '5+' document formats) and keep searching
+    }
   }
   if (project.outcome) return { value: "•", caption: project.outcome.split(".")[0] };
   return null;

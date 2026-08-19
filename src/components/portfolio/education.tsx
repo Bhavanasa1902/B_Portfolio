@@ -25,8 +25,7 @@ export function Education() {
             title={
               <>
                 Two degrees, two
-                <br className="hidden sm:block" />{" "}
-                <span className="italic font-normal text-ink-soft">continents</span>.
+                <br className="hidden sm:block" />perspectives
               </>
             }
           />
@@ -34,9 +33,9 @@ export function Education() {
 
         <Reveal delay={0.1}>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
-            Formal training in computer science on both sides of the Pacific —
-            undergraduate foundations in Bangalore, graduate depth at CSU
-            Fullerton.
+            Formal CS training in India and the U.S.: a Bachelor in Bangalore
+            and an MS at CSU Fullerton, paired with hands-on data engineering
+            and teaching experience.
           </p>
         </Reveal>
 

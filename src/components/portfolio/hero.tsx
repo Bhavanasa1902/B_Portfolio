@@ -75,7 +75,7 @@ export function Hero() {
               className="font-display font-medium text-ink leading-[0.96] tracking-[-0.035em] text-[clamp(2.75rem,7vw,6.5rem)]"
             >
               <span className="block">Hi, I&apos;m <span className="italic font-normal text-ink-soft">Bhavana</span></span>
-              <span className="block text-ink">a Data & AI Engineer</span>
+              <span className="block text-ink">a Data, Backend & AI Engineer</span>
             </motion.h1>
 
             <motion.p
@@ -84,7 +84,7 @@ export function Hero() {
               transition={{ ...transition, delay: 0.45 }}
               className="mt-6 max-w-xl text-base md:text-lg text-ink-soft leading-relaxed"
             >
-              I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence.
+              I engineer data pipelines, backend systems, and cloud-native platforms that power reliable analytics and AI.
             </motion.p>
 
             <motion.div
@@ -189,7 +189,8 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ ...transition, delay: 0.55 }}
           >
-            <div className="relative">
+            <div className="flex flex-col items-center">
+              <div className="relative">
               {/* Outer rotating ring — subtle editorial flourish */}
               <div
                 aria-hidden
@@ -222,8 +223,9 @@ export function Hero() {
                   {profile.firstName} · 2026
                 </span>
               </div>
-              {/* Subheadline placed outside the portrait rings and name */}
-              <div className="absolute left-1/2 -translate-x-1/2 w-full flex justify-center pointer-events-none" style={{ bottom: '-4.5rem' }}>
+              </div>
+              {/* Subheadline placed as a static block below the portrait so it sits outside the circular frame */}
+              <div className="mt-4 md:mt-6 lg:mt-8 flex justify-center w-full">
                 <p className="max-w-[36rem] text-center text-sm md:text-base text-ink-soft px-4">
                   {profile.positioning}
                 </p>
