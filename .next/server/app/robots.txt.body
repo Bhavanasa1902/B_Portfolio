@@ -1,6 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /api/
-
-Host: https://bhavana-portfolio-cyan.vercel.app
-Sitemap: https://bhavana-portfolio-cyan.vercel.app/sitemap.xml
