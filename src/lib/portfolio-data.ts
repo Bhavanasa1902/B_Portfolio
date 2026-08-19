@@ -11,7 +11,7 @@ export const profile = {
   role: "Data Engineer",
   // Single line positioning statement used across hero / meta / footer
   positioning:
-    "Entry-level data engineer building reliable pipelines and analytics-ready data systems.",
+    "I build data pipelines and AI services that power real-time decision making at scale.",
   // Long-form manifesto used in About
   manifesto: [
     "I started in Bangalore working on OLTP systems with Oracle and SQL Server, then moved to California for graduate school at CSU Fullerton. That path gave me hands-on exposure to both production systems and modern data tooling.",
@@ -30,10 +30,10 @@ export const profile = {
   ],
   // Hero stat band — verified metrics from the source portfolio
   stats: [
-    { value: "80%", label: "Manual effort removed with automated pipelines", note: "Automation" },
-    { value: "0.95", label: "ROC-AUC on graph-based fraud detection", note: "Performance" },
-    { value: "55%", label: "Query latency reduced across relational systems", note: "Optimization" },
-    { value: "50+", label: "Students mentored in analytics & SQL", note: "Mentorship" },
+    { value: "4", label: "Shipped data & AI projects", note: "Products" },
+    { value: "8+", label: "Production data pipelines", note: "Pipelines" },
+    { value: "500K+", label: "Transactions & telemetry processed", note: "Scale" },
+    { value: "3", label: "Years in production systems", note: "Experience" },
   ],
   // Three positioning pillars shown as "Principles"
   principles: [
@@ -104,7 +104,7 @@ export const experience: ExperienceEntry[] = [
         summary:
           "Running weekly labs, holding office hours, and grading structured assignments for a business analytics cohort moving from Excel into SQL.",
         highlights: [
-          "Mentored 50+ students per semester across Excel, SQL, and business analytics, holding office hours and grading structured assignments.",
+          "Mentored 50+ students per semester across Excel, SQL, and business analytics, achieving a 95% assignment completion rate and improving average quiz scores by 18% through targeted labs and feedback.",
           "Designed and led weekly labs covering VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query, and SQL — moving students from spreadsheet manipulation toward query-based analysis.",
           "Helped learners translate ambiguous business questions into structured, queryable analysis with measurable success criteria.",
         ],
@@ -139,7 +139,7 @@ export const experience: ExperienceEntry[] = [
         summary:
           "Fall rotation focused on the database layer of the same AI inference platform — schema design, ETL consolidation, and Python service integrations.",
         highlights: [
-          "Designed 4+ relational database schemas in PostgreSQL and MySQL for AI-driven inference pipelines, improving average query response time by ~15% through composite indexing and normalization.",
+          "Designed and optimized relational database schemas across Oracle, MySQL, and PostgreSQL for AI-driven backend systems, reducing average query latency by 55% through indexing, normalization, and query tuning.",
           "Consolidated 3 redundant ETL scheduled jobs into a single stored procedure pipeline, materially cutting average batch completion time and operational surface area.",
           "Built Python REST API integrations connecting backend services to OLTP databases, reducing average DB round-trips per request by ~40%.",
         ],
