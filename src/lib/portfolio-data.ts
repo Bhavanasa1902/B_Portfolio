@@ -257,7 +257,7 @@ export const projects: ProjectEntry[] = [
     problem:
       "A textile business needed a single source of truth for orders, inventory, and supplier data — with real-time consistency and analytical reporting on top.",
     approach:
-      "Designed a fully normalized schema for orders, inventory, and supplier tracking. Built stored procedures to keep stock and pricing consistent in real time, with reporting queries layered for demand forecasting.",
+      "Designed a fully normalized schema for orders, inventory, supplier tracking, and payment workflows. Built stored procedures to keep stock and pricing consistent in real time, with reporting queries layered for demand forecasting.",
     outcome:
       "A single relational system that supports live transactions, enforces consistency, and powers demand forecasting and production planning.",
     engineering: [
@@ -272,13 +272,13 @@ export const projects: ProjectEntry[] = [
   },
   {
     id: "ecommerce-app",
-    title: "E-Commerce Web Application",
+    title: "E-Commerce Web Application (Internship Project)",
     category: "Additional Project · React · Firebase",
     tagline: "Full shopping experience with persistent cart",
     problem:
       "Build a complete commerce experience — discovery, authentication, cart, and checkout — without a custom backend, using Firebase as the system of record.",
     approach:
-      "Implemented a React-based storefront with Firebase authentication, Firestore-backed cart persistence, dynamic product browsing across 5+ categories, and a secure checkout flow.",
+      "Implemented a React-based storefront with Firebase authentication, Firestore-backed cart persistence, dynamic product browsing across 5+ categories, and a secure checkout flow — focused on frontend performance, auth, and state persistence.",
     outcome:
       "A responsive commerce app used to strengthen frontend architecture, authentication, and data-state management fundamentals.",
     engineering: [
