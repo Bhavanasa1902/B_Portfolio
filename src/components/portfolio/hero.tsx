@@ -205,7 +205,7 @@ export function Hero() {
               <div className="relative aspect-square w-[clamp(220px,28vw,360px)] overflow-hidden rounded-full border border-rule-strong bg-paper-sunken shadow-[0_30px_60px_-25px_rgba(0,0,0,0.25)]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/bhavana_headshot.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bhavana_headshot.png`}
                   alt={`${profile.name} — portrait`}
                   className="h-full w-full object-cover"
                   width={480}

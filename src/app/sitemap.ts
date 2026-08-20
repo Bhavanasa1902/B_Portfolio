@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://bhavana-portfolio-cyan.vercel.app";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://bhavanasa1902.github.io/B_Portfolio";
   const lastModified = new Date();
 
   return [

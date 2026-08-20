@@ -173,7 +173,7 @@ export function SiteNav() {
             </button>
 
             <a
-              href="/resume.pdf"
+                href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/resume.pdf`}
               className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-rule-strong bg-transparent px-4 py-2 font-mono-label text-[10px] uppercase tracking-[0.18em] text-ink transition-all duration-200 hover:border-ink hover:bg-ink hover:text-paper"
             >
               Résumé
@@ -276,7 +276,7 @@ export function SiteNav() {
                   {profile.phone}
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/resume.pdf`}
                   className="link-editorial text-ink"
                 >
                   Download résumé ↓
