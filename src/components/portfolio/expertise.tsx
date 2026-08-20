@@ -38,9 +38,8 @@ export function Expertise() {
 
         <Reveal delay={0.1}>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
-            Early-career fluency across the modern data stack — from query
-            optimization to ML-ready pipelines. These are the tools I use most
-            often, grouped by where they fit in the architecture.
+            An engineering stack spanning software, data, cloud, and applied AI. 
+            These are the technologies I use to build, analyze, and ship.
           </p>
         </Reveal>
 
@@ -56,15 +55,6 @@ export function Expertise() {
             </StaggerItem>
           ))}
         </Stagger>
-
-        {/* Legend / philosophy footer */}
-        <Reveal delay={0.2}>
-          <p className="mt-12 max-w-2xl text-sm text-ink-mute leading-relaxed italic font-display">
-            &ldquo;The right tool is usually the one your team already
-            understands — and the second-best is the one you can teach them in
-            an afternoon.&rdquo;
-          </p>
-        </Reveal>
       </div>
     </section>
   );

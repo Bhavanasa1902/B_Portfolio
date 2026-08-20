@@ -96,7 +96,7 @@ function CompanyCard({
             {entry.summary}
           </p>
           <p className="mt-4 ml-9 md:ml-10 text-sm text-ink-mute">
-            Hover or tap the card to reveal detailed role information.
+            Tap the card to show more information.
           </p>
         </div>
 
