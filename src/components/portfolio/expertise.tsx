@@ -24,7 +24,7 @@ export function Expertise() {
         <Reveal>
           <SectionLabel
             index="02"
-            eyebrow="Technical Expertise"
+            eyebrow="Technical Skills"
             title={
               <>
                 The stack behind
@@ -37,8 +37,8 @@ export function Expertise() {
 
         <Reveal delay={0.1}>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
-            An engineering stack spanning software, data, cloud, and applied AI. 
-            These are the technologies I use to build, analyze, and ship.
+            My engineering stack spans across software, data, cloud, and applied AI. 
+            These are the technologies I have used to build, analyze, and ship real systems.
           </p>
         </Reveal>
 

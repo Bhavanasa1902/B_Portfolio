@@ -1,23 +1,21 @@
 /**
  * Portfolio content for Bhavana Sudhakar Athavane — Data Engineer
- * Extracted and refined from the source portfolio.
- * Wording improved for editorial clarity while preserving all factual information.
  */
 
 export const profile = {
   name: "Bhavana Sudhakar Athavane",
-  firstName: "Bhavana",
+  firstName: "Bhavana Sudhakar",
   lastName: "Athavane",
-  role: "Data Engineer",
+  role: "Data / SoftwareEngineer",
   // Single line positioning statement used across hero / meta / footer
   positioning:
-    "I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence.",
+    "I build reliable data pipelines, cloud platforms, and AI-powered systems designed to scale from raw data to production.",
   // Long-form manifesto used in About
   manifesto: [
-    "I build the systems that let AI and data scale — from backend to cloud.",
-    "I focus on engineering reliable backend systems, cloud-native architecture, and ML-ready data pipelines that teams can build on with confidence.",
-    "My work spans database engineering, REST API design, cloud platform integration, and applied machine learning — with a focus on measurable outcomes: lower latency, cleaner interfaces, and systems that hold up under real usage.",
-    "Through platform engineering and database co-ops, I've built fault-diagnostic pipelines on Google Cloud, integrating platform monitoring data with ticketing and asset-management systems through REST APIs, and worked on Python-based backend integrations across Oracle, MySQL, and PostgreSQL. In enterprise systems roles, I've contributed to database performance work and automated ETL workflows in Python. As a Graduate Teaching Associate at CSUF, I run labs and office hours in SQL and business analytics, helping students turn ambiguous business questions into structured, queryable analysis.",
+    "I’ve always been drawn to the part of engineering that sits between a messy problem and a system people can actually depend on. I enjoy taking something ambiguous, understanding how the pieces fit together, and turning it into something structured, useful, and maintainable.",
+    "That instinct has shaped how I’ve approached every stage of my work—from enterprise platforms and data systems to AI-driven applications. I care about the details that are easy to overlook: whether a system is understandable six months later, whether an interface makes sense to the person using it, whether a pipeline fails gracefully, and whether the solution actually solves the problem it was built for.",
+    "Working across industry and academia has also taught me that good engineering is rarely about choosing the most complicated solution. It is about asking better questions, learning quickly, communicating clearly, and knowing when simplicity is the better design decision.",
+    "I’m still early in my career, but that is the part I want to keep with me as the systems get bigger and the problems get harder: build with curiosity, be deliberate with complexity, and leave things better than I found them.",
   ],
   location: "Fullerton, California, USA",
   email: "bhavanasathavane@gmail.com",
@@ -387,52 +385,52 @@ export type SkillGroup = {
 };
 
 export const skillGroups: SkillGroup[] = [
-  {
+{
     id: "programming",
-    title: "Programming",
-    caption: "Languages I reach for first",
+    title: "Programming & Data Engineering",
+    caption: "Programming languages and data development",
     skills: [
-      { label: "SQL / PL/SQL / Query Optimization" },
       { label: "Python" },
+      { label: "SQL / PL/SQL / Query Optimization" },
       { label: "ETL / ELT Pipeline Development" },
-      { label: "Database Design & Normalization" },
+      { label: "Data Modeling & Transformation" },
       { label: "Java / JavaScript" },
     ],
   },
   {
     id: "databases",
-    title: "Databases & Warehousing",
-    caption: "Where the data lives",
+    title: "Databases",
+    caption: "Storage, modeling, and querying",
     skills: [
       { label: "PostgreSQL / MySQL" },
       { label: "Oracle DB / SQL Server" },
-      { label: "BigQuery / Redshift" },
+      { label: "BigQuery / Amazon Redshift" },
+      { label: "Database Design & Normalization" },
       { label: "Data Warehousing Architecture" },
-      { label: "Stored Procedures & Triggers" },
     ],
   },
   {
     id: "cloud-ai",
     title: "Cloud & AI",
-    caption: "Platform and intelligence layer",
+    caption: "Cloud platforms and intelligent systems",
     skills: [
       { label: "Google Cloud Platform (GCP)" },
       { label: "Vertex AI / ML Pipelines" },
-      { label: "BigQuery ML / Analytics" },
       { label: "LLM Integration & Semantic Search" },
       { label: "NLP & Text Analytics" },
+      { label: "BigQuery ML / Analytics" },
     ],
   },
   {
     id: "tools-devops",
-    title: "Tools & DevOps",
-    caption: "How work ships",
+    title: "Engineering & Analytics",
+    caption: "Development, deployment, and analysis",
     skills: [
-      { label: "Git / Version Control" },
-      { label: "Tableau / Data Visualization" },
       { label: "REST APIs / Microservices" },
+      { label: "Git / Version Control" },
       { label: "Docker / Kubernetes" },
-      { label: "Jira / CI-CD Pipelines" },
+      { label: "CI/CD & Development Workflows" },
+      { label: "Tableau / Data Visualization" },
     ],
   },
 ];
