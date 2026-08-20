@@ -18,30 +18,28 @@ export function Education() {
       aria-labelledby="education-heading"
     >
 
-        <div className="container-editorial">
-          <Reveal>
-            <SectionLabel
-              index="05"
-              eyebrow="Education"
-              title={
-                <>
-                  Foundations in
-                  <br className="hidden sm:block" />computer science
-                </>
-              }
-            />
-          </Reveal>
+      <div className="container-editorial">
+        <Reveal>
+          <SectionLabel
+            index="05"
+            eyebrow="Education"
+            title={
+              <>
+                Foundations in
+                <br className="hidden sm:block" />Computer Science
+              </>
+            }
+          />
+        </Reveal>
 
-          <Reveal delay={0.1}>
-            <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
-              My computer science foundation began in Bangalore with a bachelor’s
-              degree focused on software and systems, and continued at California
-              State University, Fullerton, where I pursued an Master's in Computer Science
-              with deeper exposure to data, analytics, and applied AI.
-            </p>
-          </Reveal>
-        </div>
-
+        <Reveal delay={0.1}>
+          <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
+            My computer science foundation began in Bangalore, India with a bachelor’s
+            degree focused on software and systems, and continued at California
+            State University, Fullerton, where I pursued a Master's in Computer Science
+            with deeper exposure to data, analytics, and applied AI.
+          </p>
+        </Reveal>
 
         <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
           {education.map((ed, i) => (
@@ -86,6 +84,7 @@ export function Education() {
             </Reveal>
           ))}
         </div>
+      </div>
     </section>
   );
 }

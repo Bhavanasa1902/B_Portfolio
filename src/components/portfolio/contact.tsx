@@ -121,7 +121,7 @@ export function Contact() {
                 {profile.socials.map((s) => (
                   <li key={s.label}>
                     <a
-                      href={s.href}
+                      href={s.label === "Resume" ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${s.href}` : s.href}
                       target={s.href.startsWith("http") ? "_blank" : undefined}
                       rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       className="group inline-flex items-baseline gap-2"
