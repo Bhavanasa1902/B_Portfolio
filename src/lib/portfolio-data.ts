@@ -106,7 +106,7 @@ export const experience: ExperienceEntry[] = [
     period: "May 2025 — Dec 2025",
     kind: "Co-op",
     summary:
-      "Worked across Nokia's AI-assisted fault-diagnostics platform through two consecutive engineering rotations, first focusing on cloud-based AI and telemetry workflows, then on the database and backend systems supporting the platform.",
+      "Built production pipelines for AI-driven fault diagnostics.",
     roles: [
       {
         title: "Platform Engineering Co-op — AI Systems",
