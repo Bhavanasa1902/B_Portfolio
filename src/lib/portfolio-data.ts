@@ -37,21 +37,7 @@ export const profile = {
     { value: "500K+", label: "Transactions & telemetry processed", note: "Scale" },
     { value: "3", label: "Years in production systems", note: "Experience" },
   ],
-  // Three positioning pillars shown as "Principles"
-  principles: [
-    {
-      title: "Reliable systems",
-      body: "Backend and ETL flows engineered to avoid surprises, stay observable, and scale with demand rather than against it.",
-    },
-    {
-      title: "Production-ready foundations",
-      body: "Databases, APIs, and cloud infrastructure designed so teams can ship analytics, ML, and platform features with confidence, not caveats.",
-    },
-    {
-      title: "Impact-first work",
-      body: "Outcomes over activity: faster queries, lower latency, cleaner architecture — measured, not asserted.",
-    },
-  ],
+
   // Quick tech tags surfaced in hero
   signatureStack: [
     "SQL",
