@@ -377,7 +377,6 @@ export const projects: ProjectEntry[] = [
 
 export type Skill = {
   label: string;
-  value: number;
 };
 
 export type SkillGroup = {
@@ -390,14 +389,14 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     id: "programming",
-    title: "Programming & Query",
+    title: "Programming",
     caption: "Languages I reach for first",
     skills: [
-      { label: "SQL / PL/SQL / Query Optimization", value: 92 },
-      { label: "Python", value: 88 },
-      { label: "ETL / ELT Pipeline Development", value: 82 },
-      { label: "Database Design & Normalization", value: 80 },
-      { label: "Java / JavaScript", value: 58 },
+      { label: "SQL / PL/SQL / Query Optimization" },
+      { label: "Python" },
+      { label: "ETL / ELT Pipeline Development" },
+      { label: "Database Design & Normalization" },
+      { label: "Java / JavaScript" },
     ],
   },
   {
@@ -405,11 +404,11 @@ export const skillGroups: SkillGroup[] = [
     title: "Databases & Warehousing",
     caption: "Where the data lives",
     skills: [
-      { label: "PostgreSQL / MySQL", value: 82 },
-      { label: "Oracle DB / SQL Server", value: 78 },
-      { label: "BigQuery / Redshift", value: 76 },
-      { label: "Data Warehousing Architecture", value: 74 },
-      { label: "Stored Procedures & Triggers", value: 80 },
+      { label: "PostgreSQL / MySQL" },
+      { label: "Oracle DB / SQL Server" },
+      { label: "BigQuery / Redshift" },
+      { label: "Data Warehousing Architecture" },
+      { label: "Stored Procedures & Triggers" },
     ],
   },
   {
@@ -417,11 +416,11 @@ export const skillGroups: SkillGroup[] = [
     title: "Cloud & AI",
     caption: "Platform and intelligence layer",
     skills: [
-      { label: "Google Cloud Platform (GCP)", value: 88 },
-      { label: "Vertex AI / ML Pipelines", value: 80 },
-      { label: "BigQuery ML / Analytics", value: 78 },
-      { label: "LLM Integration & Semantic Search", value: 74 },
-      { label: "NLP & Text Analytics", value: 72 },
+      { label: "Google Cloud Platform (GCP)" },
+      { label: "Vertex AI / ML Pipelines" },
+      { label: "BigQuery ML / Analytics" },
+      { label: "LLM Integration & Semantic Search" },
+      { label: "NLP & Text Analytics" },
     ],
   },
   {
@@ -429,11 +428,11 @@ export const skillGroups: SkillGroup[] = [
     title: "Tools & DevOps",
     caption: "How work ships",
     skills: [
-      { label: "Git / Version Control", value: 90 },
-      { label: "Tableau / Data Visualization", value: 80 },
-      { label: "REST APIs / Microservices", value: 72 },
-      { label: "Docker / Kubernetes", value: 60 },
-      { label: "Jira / CI-CD Pipelines", value: 56 },
+      { label: "Git / Version Control" },
+      { label: "Tableau / Data Visualization" },
+      { label: "REST APIs / Microservices" },
+      { label: "Docker / Kubernetes" },
+      { label: "Jira / CI-CD Pipelines" },
     ],
   },
 ];
@@ -456,7 +455,6 @@ export const education: EducationEntry[] = [
     field: "Computer Science",
     location: "Fullerton, CA, USA",
     period: "2024 — May 2026",
-    current: true,
   },
   {
     id: "jyothy",

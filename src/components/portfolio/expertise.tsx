@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { Reveal, SectionLabel, Stagger, StaggerItem } from "./primitives";
-import { Progress } from "@/components/ui/progress";
 import { skillGroups } from "@/lib/portfolio-data";
 
 /* ============================================================
@@ -84,15 +83,14 @@ function SkillCard({
         </span>
       </div>
 
-      {/* Skills — clean list with hairline dividers */}
-      <ul className="flex flex-col mt-auto space-y-4 pt-4 border-t border-rule text-ink-soft">
+      {/* Skills — names only, with hairline dividers */}
+      <ul className="mt-auto grid gap-0 border-t border-rule text-ink-soft">
         {group.skills.map((skill) => (
-          <li key={skill.label} className="space-y-2">
-            <div className="flex items-center justify-between gap-3 text-[13px] md:text-sm">
-              <span className="font-medium text-ink">{skill.label}</span>
-              <span className="tabular-nums text-ink-mute">{skill.value}%</span>
-            </div>
-            <Progress value={skill.value} className="h-2 rounded-full bg-ink/10" />
+          <li
+            key={skill.label}
+            className="border-b border-rule py-3 text-[13px] md:text-sm font-medium text-ink"
+          >
+            {skill.label}
           </li>
         ))}
       </ul>
