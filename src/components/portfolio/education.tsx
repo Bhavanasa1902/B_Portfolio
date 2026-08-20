@@ -17,27 +17,31 @@ export function Education() {
       className="relative scroll-mt-20 py-24 md:py-36 border-t border-rule"
       aria-labelledby="education-heading"
     >
-      <div className="container-editorial">
-        <Reveal>
-          <SectionLabel
-            index="05"
-            eyebrow="Education"
-            title={
-              <>
-                Two degrees, two
-                <br className="hidden sm:block" />perspectives
-              </>
-            }
-          />
-        </Reveal>
 
-        <Reveal delay={0.1}>
-          <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
-            Formal CS training in India and the U.S.: a Bachelor in Bangalore
-            and an MS at CSU Fullerton, paired with hands-on data engineering
-            and teaching experience.
-          </p>
-        </Reveal>
+        <div className="container-editorial">
+          <Reveal>
+            <SectionLabel
+              index="05"
+              eyebrow="Education"
+              title={
+                <>
+                  Foundations in
+                  <br className="hidden sm:block" />computer science
+                </>
+              }
+            />
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
+              My computer science foundation began in Bangalore with a bachelor’s
+              degree focused on software and systems, and continued at California
+              State University, Fullerton, where I pursued an Master's in Computer Science
+              with deeper exposure to data, analytics, and applied AI.
+            </p>
+          </Reveal>
+        </div>
+
 
         <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
           {education.map((ed, i) => (
@@ -82,7 +86,6 @@ export function Education() {
             </Reveal>
           ))}
         </div>
-      </div>
     </section>
   );
 }

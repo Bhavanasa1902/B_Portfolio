@@ -88,7 +88,7 @@ export function Contact() {
                   <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-ink" />
                 </span>
                 <span className="font-mono-label text-[10px] uppercase tracking-[0.22em]">
-                  {profile.availabilityNote}
+                  {profile.availability}
                 </span>
               </div>
             </div>

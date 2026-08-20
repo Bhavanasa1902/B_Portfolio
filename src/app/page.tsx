@@ -39,7 +39,7 @@ export default function Home() {
         <Marquee
           items={marqueeItems}
           stats={profile.stats}
-          duration={85}
+          duration={80}
         />
         <About />
         <Experience />
