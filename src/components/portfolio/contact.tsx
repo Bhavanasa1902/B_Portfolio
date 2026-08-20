@@ -143,14 +143,6 @@ export function Contact() {
               <p className="eyebrow-parens">Reach</p>
               <dl className="flex flex-col gap-2">
                 <div className="flex flex-col">
-                  <dt className="font-mono-label text-[9px] uppercase tracking-[0.22em] text-ink-mute mb-0.5">Phone</dt>
-                  <dd className="text-base text-ink">
-                    <a href={`tel:${profile.phone.replace(/[^\d+]/g, "")}`} className="link-editorial">
-                      {profile.phone}
-                    </a>
-                  </dd>
-                </div>
-                <div className="flex flex-col mt-2">
                   <dt className="font-mono-label text-[9px] uppercase tracking-[0.22em] text-ink-mute mb-0.5">Location</dt>
                   <dd className="text-base text-ink">{profile.location}</dd>
                 </div>
