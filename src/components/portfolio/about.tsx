@@ -65,3 +65,7 @@ export function About() {
             </Stagger>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}

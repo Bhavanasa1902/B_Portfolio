@@ -17,25 +17,24 @@ export const profile = {
     "Working across industry and academia has also taught me that good engineering is rarely about choosing the most complicated solution. It is about asking better questions, learning quickly, communicating clearly, and knowing when simplicity is the better design decision.",
     "I’m still early in my career, but that is the part I want to keep with me as the systems get bigger and the problems get harder: build with curiosity, be deliberate with complexity, and leave things better than I found them.",
   ],
-  location: "Fullerton, California, USA",
-  email: "bhavanasathavane@gmail.com",
-  phone: "+1 (657) 751-9230",
-  availability: "Open to data platform / AI engineering roles",
-  availabilityNote: "Open to full-time roles in data platforms, cloud, and AI engineering",
-  archetype: "developer",
-  seniority: "mid",
-  focusAreas: ["AI", "Cloud Computing", "Fintech", "Telecom"],
+  location:     "Fullerton, California, USA",
+  email:        "bhavanasathavane@gmail.com",
+  availability: "Open to data, software, platform and AI engineering roles",
+  archetype:    "developer",
+  seniority:    "entry-level",
+  focusAreas:   ["AI", "Cloud Computing", "Fintech", "Telecom"],
   socials: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/bhavana-athavane", handle: "bhavana-athavane" },
-    { label: "GitHub", href: "https://github.com/Bhavanasa1902", handle: "Bhavanasa1902" },
+    { label: "GitHub", href: "https://github.com/bhavana-sa", handle: "bhavana-sa" },
     { label: "Resume", href: "/resume.pdf", handle: "Download PDF" },
   ],
-  // Hero stat band — verified metrics from the source portfolio
+
+  // Hero stat band
   stats: [
-    { value: "4", label: "Shipped data & AI projects", note: "Products" },
-    { value: "8+", label: "Production data pipelines", note: "Pipelines" },
-    { value: "500K+", label: "Transactions & telemetry processed", note: "Scale" },
-    { value: "3", label: "Years in production systems", note: "Experience" },
+    { value: "4+",  label: "Shipped data & AI projects",  note: "Built end-to-end" },
+    { value: "8+",  label: "Production data pipelines",   note: "Engineering & data" },
+    { value: "3+",  label: "Years in production systems", note: "Experience" },
+    { value: "50+", label: "Students mentored",           note: "Graduate teaching" },
   ],
 
   // Quick tech tags surfaced in hero
