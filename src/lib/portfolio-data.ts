@@ -81,26 +81,24 @@ export const experience: ExperienceEntry[] = [
     id: "csuf-ta",
     org: "California State University, Fullerton",
     location: "Fullerton, CA",
-    period: "Jan 2026 — May 2026",
-    current: true,
+    period: "Jan 2026 — August 2026",
     kind: "Academic",
     summary:
-      "Graduate teaching assistant for an undergraduate business analytics course — bridging spreadsheet-first thinking and structured query work for fifty-plus students per semester.",
+      "Graduate Teaching Assistant for an undergraduate business analytics course ",
     roles: [
       {
         title: "Graduate Teaching Assistant — ISDS 361B",
-        period: "Jan 2026 — May 2026",
+        period: "Jan 2026 — August 2026",
         summary:
-          "Running weekly labs, holding office hours, and grading structured assignments for a business analytics cohort moving from Excel into SQL.",
+          "Supported an undergraduate business analytics course, bridging spreadsheet-based analysis with structured SQL and data reasoning.",
         highlights: [
-          "Mentored 50+ students per semester across Excel, SQL, and business analytics, achieving a 95% assignment completion rate and improving average quiz scores by 18% through targeted labs and feedback.",
-          "Designed and led weekly labs covering VLOOKUP, INDEX/MATCH, Pivot Tables, Power Query, and SQL — moving students from spreadsheet manipulation toward query-based analysis.",
-          "Helped learners translate ambiguous business questions into structured, queryable analysis with measurable success criteria.",
+          "Supported an undergraduate business analytics course for more than 50 students per semester, helping students transition from spreadsheet-based analysis into SQL and more structured approaches to working with data. Led weekly labs and office hours covering Excel, Power Query, and SQL, while helping students turn open-ended business questions into clear, queryable analyses with defined success criteria. Worked closely with students through assignments and feedback to reinforce both the technical mechanics and the reasoning behind their analysis.",
         ],
         stack: ["SQL", "Excel", "Power Query", "Tableau"],
       },
     ],
   },
+
   {
     id: "nokia",
     org: "Nokia",
@@ -108,34 +106,49 @@ export const experience: ExperienceEntry[] = [
     period: "May 2025 — Dec 2025",
     kind: "Co-op",
     summary:
-      "Two back-to-back co-op rotations on Nokia's AI inference and fault-diagnostics platform — first implementing the AI workflow, then strengthening the database layer underneath.",
+      "Worked across Nokia's AI-assisted fault-diagnostics platform through two consecutive engineering rotations, first focusing on cloud-based AI and telemetry workflows, then on the database and backend systems supporting the platform.",
     roles: [
       {
         title: "Platform Engineering Co-op — AI Systems",
         period: "May 2025 — Aug 2025",
         summary:
-          "Summer co-op focused on Nokia's AI-assisted fault diagnostics — Vertex AI classification, real-time telemetry pipelines, and LLM-powered incident search.",
+          "Owned development and production of Vertex AI based Fault Diagnostic pipeline",
         highlights: [
-          "Built an AI-powered fault diagnostic pipeline on Google Cloud Vertex AI achieving 82% fault classification accuracy; contributed to a 41% reduction in Mean Time to Resolution (MTTR).",
-          "Built log-processing pipelines on GCP (Pub/Sub → Dataflow → BigQuery) handling real-time telemetry, cutting manual triage effort by ~80% and enabling automated alerting.",
-          "Integrated LLM-powered semantic search using a RAG architecture across CMDB, JIRA, and knowledge bases, reducing average incident resolution time by over 35%.",
+          "Developed Google Cloud pipelines using Pub/Sub, Dataflow, and BigQuery to process diagnostic data, and built a Vertex AI workflow that reached 82% accuracy in identifying software fault drivers.",
+          "Integrated LLM-based semantic search across JIRA, CMDB, and internal knowledge sources using a RAG architecture, helping automate manual triage and contributing to a 41% reduction in mean time to resolution.",
         ],
-        stack: ["GCP", "Vertex AI", "Pub/Sub", "Dataflow", "BigQuery", "LLM", "RAG"],
+        stack: [
+          "GCP",
+          "Vertex AI",
+          "Pub/Sub",
+          "Dataflow",
+          "BigQuery",
+          "LLM",
+          "RAG",
+        ],
       },
+
       {
         title: "Database Software Engineer — Co-op",
         period: "Sep 2025 — Dec 2025",
         summary:
-          "Fall rotation focused on the database layer of the same AI inference platform — schema design, ETL consolidation, and Python service integrations.",
+          "Focused on the database and backend layer of the platform, working across relational schema design, ETL consolidation, query optimization, and service integrations.",
         highlights: [
-          "Designed and optimized relational database schemas across Oracle, MySQL, and PostgreSQL for AI-driven backend systems, reducing average query latency by 55% through indexing, normalization, and query tuning.",
-          "Consolidated 3 redundant ETL scheduled jobs into a single stored procedure pipeline, materially cutting average batch completion time and operational surface area.",
-          "Built Python REST API integrations connecting backend services to OLTP databases, reducing average DB round-trips per request by ~40%.",
+          "Designed and optimized relational systems across Oracle, MySQL, and PostgreSQL, using indexing, normalization, and query tuning to reduce average query latency by 55%.",
+          "Consolidated redundant ETL jobs into a single stored-procedure pipeline and built Python-based REST integrations between backend services and OLTP databases, reducing average database round-trips per request by approximately 40%.",
         ],
-        stack: ["PostgreSQL", "MySQL", "Python", "REST", "Stored Procedures"],
+        stack: [
+          "PostgreSQL",
+          "MySQL",
+          "Oracle DB",
+          "Python",
+          "REST",
+          "Stored Procedures",
+        ],
       },
     ],
   },
+
   {
     id: "cognizant",
     org: "Cognizant",
@@ -143,27 +156,28 @@ export const experience: ExperienceEntry[] = [
     period: "Mar 2022 — Aug 2024",
     kind: "Full-time",
     summary:
-      "Two and a half years across two roles — first automating ETL and reporting as a trainee, then taking on broader Oracle DB performance and data-quality responsibilities.",
+      "Owned production environments for internal data and reporting systems.",
     roles: [
       {
         title: "Programmer Analyst Trainee",
         period: "Mar 2022 — Dec 2023",
         summary:
-          "First role out of undergrad — automation and reporting across internal ETL workflows and executive dashboards for multiple business units.",
+          "Worked across internal data and reporting workflows, improving how teams processed, validated, and consumed operational data.",
         highlights: [
-          "Automated 8 internal ETL workflows using Python and SQL, reducing end-to-end processing time by ~20% and freeing ~15 hours/week of analyst time.",
-          "Performed data validation across Oracle DB and SQL Server for 4 production pipelines; built and delivered 6 executive Tableau dashboards tracking KPIs across revenue, operations, and compliance.",
+          "Automated eight ETL workflows using Python and SQL, reducing processing time by approximately 20% while eliminating repetitive manual work for analysts.",
+          "Worked across Oracle and SQL Server to validate production pipelines and built Tableau dashboards tracking revenue, operational, and compliance metrics across multiple business units.",
         ],
         stack: ["Python", "SQL", "Oracle DB", "SQL Server", "Tableau"],
       },
+
       {
         title: "Senior Systems Engineer",
         period: "Dec 2023 — Aug 2024",
         summary:
-          "Promoted role focused on Oracle DB performance across three production systems and a cross-system validation framework used by the data quality team.",
+          "Took on broader responsibility for database performance and data quality across three production systems.",
         highlights: [
-          "Led an Oracle DB performance engineering initiative across 3 production systems, improving overall throughput by 30% through query analysis, index rebuilding, and partition pruning.",
-          "Developed an automated SQL data-validation framework in Python and PL/SQL spanning Oracle DB and SQL Server, catching ~200 cross-system discrepancies per month and reducing reconciliation time by 20%.",
+          "Led Oracle performance improvements through query analysis, index optimization, and partition pruning, increasing overall system throughput by approximately 30%.",
+          "Built a Python and PL/SQL validation framework spanning Oracle and SQL Server that identified roughly 200 cross-system discrepancies each month and reduced manual reconciliation time.",
         ],
         stack: ["Oracle DB", "SQL Server", "PL/SQL", "Python"],
       },
