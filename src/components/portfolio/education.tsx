@@ -26,7 +26,8 @@ export function Education() {
             title={
               <>
                 Foundations in
-                <br className="hidden sm:block" />Computer Science
+                <br className="hidden sm:block" /> Computer{" "}
+                <span className="italic font-normal text-ink-soft">Science</span>.
               </>
             }
           />
